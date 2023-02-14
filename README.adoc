@@ -64,13 +64,14 @@ Choose link \-> 'GET YOUR FREE API KEY TODAY'
 
 image::images/alphaVantagePortal.png[]
 
-Choose 'Student' for description +
-Choose your own organisation +
-Fill up your professional email address.
+a. Choose 'Student' for description +
+b. Enter your own organisation name +
+c. Enter your email address.
 
 image::images/claimApiKey.png[]
 
-Get the license and keep it on a notepad or whatever, you will need it later.
+You should see a message like - 'Welcome to Alpha Vantage! Your dedicated access key is: YXXXXXXXXXXXXXXE. Please record this API key at a safe place for future data access.'
+Copy the access key and keep it on a notepad as you will need it later.
 
 image:images/getKey.png[]  +
 
