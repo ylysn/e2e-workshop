@@ -122,10 +122,8 @@ Check that you got the message - "Workload password is currently set".
 === CDP Portal
 
 {blank} +
-
+Click on 'DataFlow' icon.
 image::images/portalCDF.png[]
-
-Choose CDF icon.
 
 
 === Create a new CDF Catalog
