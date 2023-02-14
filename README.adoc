@@ -102,6 +102,7 @@ Please keep it with you. If you have forgotten it, you will be able to repeat th
 
 image:images/setWorkloadPasswordStep1.png[]  +
 
+. Click on the 'Profile' option.
 image:images/setWorkloadPasswordStep2.png[]  +
 
 Define your password.
