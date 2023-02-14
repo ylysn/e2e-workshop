@@ -129,8 +129,8 @@ image::images/portalCDF.png[]
 
 === Create a new CDF Catalog
 
-On the left menu choose \-> "Catalog". +
-Then select the button \-> "Import Flow Definition".
+. On the left menu choose \-> "Catalog". +
+. Select the button \-> "Import Flow Definition".
 
 
 image::images/cdfManageDeploymentStep0.png[]
@@ -153,7 +153,7 @@ Click button "Import" +
 
 image::images/cdfImportFowDefinition.png[]
 
-The new catalog has been added +
+The new catalog has been added. +
 
 image::images/cdfFlowCatalogCreated.png[]
 
