@@ -104,9 +104,9 @@ Please keep it with you. If you have forgotten it, you will be able to repeat th
 image:images/setWorkloadPasswordStep1.png[]  +
 image:images/setWorkloadPasswordStep2.png[]  +
 
-Define your password.
-+ Click button \-> "Set Workload Password".
-+
+. Enter your password and confirm the password.
+. Click button "Set Workload Password".
+
 
 image::images/setWorkloadPasswordStep3.png[]
 
@@ -114,8 +114,8 @@ image::images/setWorkloadPasswordStep3.png[]
 
 image::images/setWorkloadPasswordStep4.png[]
 
-Check that you have this mention \-> "Workload password is currently set".
-+
+Check that you got the message - "Workload password is currently set".
+
 
 == Step 5: Create the flow to ingest stock data via API to Object Storage
 
