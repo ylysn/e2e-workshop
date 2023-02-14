@@ -123,6 +123,7 @@ Check that you got the message - "Workload password is currently set".
 
 {blank} +
 Click on 'DataFlow' icon.
+
 image::images/portalCDF.png[]
 
 
