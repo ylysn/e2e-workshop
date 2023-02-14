@@ -21,7 +21,7 @@ This workshop introduces CDP, with a focus on the data management capabilities t
 
 In this exercise, we will work get stock data from https://www.alphavantage.co/[Alpha Vantage], that offers free stock APIs in JSON and CSV formats for real-time and historical stock market data.
 
-* Data ingestion and streaming -- provided by *_Cloudera Data Flow (CDF)_* and **Cloudera Data Engineering (CDE)*.
+* Data ingestion and streaming -- provided by *_Cloudera Data Flow (CDF)_* and *_Cloudera Data Engineering (CDE)_*.
 * Global data access, data processing and persistence--provided by *_Cloudera Data Hub (CDH)_*.
 * Data visualization with *_CDP Data Visualization_*.
 
