@@ -97,7 +97,8 @@ image::images/login3.png[]
 
 You will need to define your workload password that will be used to acess non-SSO interfaces. You may read more about it here (https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-access-paths-to-cdp.html)
 Please keep it with you. If you have forgotten it, you will be able to repeat this process and define another one.
-Click on your profile.
+
+. Click on your user name at the lower left corner.
 
 image:images/setWorkloadPasswordStep1.png[]  +
 
