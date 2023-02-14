@@ -99,10 +99,9 @@ You will need to define your workload password that will be used to acess non-SS
 Please keep it with you. If you have forgotten it, you will be able to repeat this process and define another one.
 
 . Click on your user name at the lower left corner.
+. Click on the 'Profile' option.
 
 image:images/setWorkloadPasswordStep1.png[]  +
-
-. Click on the 'Profile' option.
 image:images/setWorkloadPasswordStep2.png[]  +
 
 Define your password.
