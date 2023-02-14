@@ -2,59 +2,59 @@
 
 '''
 
-Version : 1.0.0 + date : 2022/09/05 +
+Version : 2.0.0 + date : 14/02/2023 +
 
 '''
 
 image::images/banner.png[]
 
-This document guides students through the Hands on lab for Partner Summit 2022.
-It will take you step by step to completing the Prerequisites and deliver this demo.
+This document guides students through the Hands-on lab for Partner Summit 2023.
+It will take you step by step to completing the pre-requisites and deliver this demo.
 
 == Introduction
 
 The purpose of this repository is to enable the easy and quick setup of the Partner Summit workshop.
 Cloudera Data Platform (CDP) has been built from the ground up to support hybrid, multi-cloud data management in support of a Data Fabric architecture.
-This worshop provide an introduction to CDP, with a focus on the data management capabilities that enable the Data Fabric and Data Lakehouse.
+This workshop introduces CDP, with a focus on the data management capabilities that enable the Data Fabric and Data Lakehouse.
 
 == Overview
 
-In this exercise, we will work get stock data from https://www.alphavantage.co/[Alpha Vantage], offers free stock APIs in JSON and CSV formats for realtime and historical stock market data,
+In this exercise, we will work get stock data from https://www.alphavantage.co/[Alpha Vantage], that offers free stock APIs in JSON and CSV formats for real-time and historical stock market data.
 
-* Data ingestion and streaming--provided by *_Cloudera Data Flow (CDF)_* and **Cloudera Data Engineering (CDE)*.
+* Data ingestion and streaming -- provided by *_Cloudera Data Flow (CDF)_* and **Cloudera Data Engineering (CDE)*.
 * Global data access, data processing and persistence--provided by *_Cloudera Data Hub (CDH)_*.
 * Data visualization with *_CDP Data Visualization_*.
 
 *_Cloudera DataFlow (CDF)_* is a scalable, real-time streaming analytics platform that ingests, curates, and analyzes data for key insights and immediate actionable intelligence.
 CDF's Flow Management is powered by Apache NiFi, a no-code data ingestion and management solution.
-Apache NiFi is a very mature open source solution meant for large scale, high velocity enterprise data ingestion use cases.
+Apache NiFi is a very mature open-source solution meant for large scale, high velocity enterprise data ingestion use cases.
 
 *_Cloudera Data Engineering (CDE)_* is a serverless service for Cloudera Data Platform that allows you to submit batch jobs to auto-scaling virtual clusters.
 CDE enables you to spend more time on your applications, and less time on infrastructure.
 CDE allows you to create, manage, and schedule Apache Spark jobs without the overhead of creating and maintaining Spark clusters.
 With Cloudera Data Engineering, you define virtual clusters with a range of CPU and memory resources, and the cluster scales up and down as needed to run your Spark workloads, helping to control your cloud costs.
 
-*_CDP Data Visualization_* enables data engineers, business analysts, and data scientists to quickly and easily explore data, collaborate, and share insights across the data lifecycle--from data ingest to data insights and beyond.
+*_CDP Data Visualization_* enables data engineers, business analysts, and data scientists explore data quickly and easily, collaborate, and share insights across the data lifecycle--from data ingest to data insights and beyond.
 Delivered natively as part of Cloudera Data Platform (CDP), Data Visualization delivers a consistent and easy to use data visualization experience with intuitive and accessible drag-and-drop dashboards and custom application creation.
 
 image::images/architecture.png[]
 
 == Pre-requisites
 
-. Laptop with a supported OS (Windows 7 not supported) or Macbook.
+. Laptop with a supported OS (Windows 7 not supported) or MacBook.
 . A modern browser - Google Chrome (IE, Firefox, Safari not supported).
-. Wifi Internet connection.
+. Wi-Fi Internet connection.
 . Git installed.
 
 == Step 1: Get github project
 
 {blank}
 
-You can use the workshop project cloning this github repository : https://github.com/bguedes/partner-summit-2022[Workshop github repo]
+You can use the workshop project cloning this github repository : https://github.com/DashDipti/partner-summit-2023 [Workshop Github repo]
 
 [,console]
 ----
-git clone https://github.com/bguedes/partner-summit-2022
+git clone https://github.com/DashDipti/partner-summit-2023
 ----
 
 == Step 2: Get Alpha Vantage Key
@@ -66,11 +66,11 @@ image::images/alphaVantagePortal.png[]
 
 Choose 'Student' for description +
 Choose your own organisation +
-Fill up your professional email address
+Fill up your professional email address.
 
 image::images/claimApiKey.png[]
 
-Get the license and keep it on a notepad or whatever, you will need it later on.
+Get the license and keep it on a notepad or whatever, you will need it later.
 
 image:images/getKey.png[]  +
 
@@ -79,7 +79,7 @@ Store your given key, you will need it later.
 
 == Step 3: Access CDP Public Cloud Portal
 
-Please use the login url https://login.cdpworkshops.cloudera.com/auth/realms/se-workshop-1/protocol/saml/clients/cdp-sso[Workshop login]
+Please use the login url: https://login.cdpworkshops.cloudera.com/auth/realms/se-workshop-1/protocol/saml/clients/cdp-sso[Workshop login]
 
 image::images/login1.png[]
 
@@ -94,7 +94,7 @@ image::images/login3.png[]
 == Step 4: Define Workload Password
 
 You will need to define your workload password that will be used to parameters the Data Services.
-+ Please keep it with you, if you have forget it, don't panic, you will be able to repeat this process and define another one.
++ Please keep it with you, if you have forgotten it, don't panic, you will be able to repeat this process and define another one.
 +  + Click on your profile.
 
 image:images/setWorkloadPasswordStep1.png[]  +
@@ -144,7 +144,7 @@ ____
 Nifi Flow Description
 
 ____
-Upload the file "*https://github.com/bguedes/partner-summit-2022/blob/main/Stocks_Intraday_Alpha_Template.json[Stocks_Intraday_Alpha_Template.json]*" +
+Upload the file "*https://github.com/DashDipti/partner-summit-2023/blob/main/Stocks_Intraday_Alpha_Template.json[Stocks_Intraday_Alpha_Template.json]*" +
 ____
 
 Click button "Import" +
@@ -168,7 +168,7 @@ Click on "Deploy" button.
 
 image::images/cdfDeploymentChooseEnv.png[]
 
-You will need to select the wokshop environment "se-workshop-1-env".
+You will need to select the workshop environment "se-workshop-1-env".
 
 image::images/cdfDeploymentStep1.png[]
 
@@ -189,7 +189,7 @@ image::images/cdfDeploymentStep3.png[]
 CDP_Password +
 
 ____
-Fill up your CDP worload password here +
+Fill up your CDP workload password here +
 ____
 
 CDP_User +
@@ -237,7 +237,7 @@ Click "Next" +
 
 image::images/cdfDeploymentStep5.png[]
 
-You can defined KPI's in regards what has been specified in your dataflow, but we will skip this for simplication.
+You can define KPI's in regards what has been specified in your dataflow, but we will skip this for now.
 + Click "Next" +
 
 image::images/cdfDeploymentStepFinal.png[]
@@ -272,7 +272,7 @@ Select "Manage Deployment" on top right corner.
 
 image::images/cdfManageDeploymentStep2.png[]
 
-On this windows, choose "Action" \-> "View Nifi".
+On this window, choose "Action" \-> "View Nifi".
 
 image::images/nifiDataflow.png[]
 
@@ -280,7 +280,7 @@ You can see the Nifi data flow that has been deployed from the json file.
 + Let's take a quick look together.
 
 At this stage you can suspend this dataflow, go back to "Deployment Manager" \-> "Action" \-> "Suspend flow".
-We will add a new stock later on and restart it.
+We will add a new stock later and restart it.
 
 image::images/cdfManageDeploymentStep2.png[]
 
@@ -310,11 +310,11 @@ Create database using your login user050, for example replace (user) by user050 
 CREATE DATABASE <user>_stocks;
 ----
 
-See the result
+See the result.
 
 image::images/cdwCreateDatabase.png[]
 
-After create a Iceberg table, change (user) with your login :
+After create a Iceberg table, change (user) with your login:
 
 [,sql]
 ----
@@ -339,7 +339,7 @@ See the result
 
 image::images/cdwCreatIcebergTable.png[]
 
-Let's now create our engeneering process.
+Let's now create our engineering process.
 +
 
 == Step 6: Process and Ingest Iceberg using CDE
@@ -397,10 +397,10 @@ Create it, not run it yet +
 
 This application will:
 
-* Check new files in the new directory;
-* Create a temp table in Spark/cache this table and identify duplicated rows (in case that NiFi loaded the same data again)
-* MERGE INTO the final table, INSERT new data or UPDATE if exists
-* Archive files in the bucket
+* Check new files in the new directory.
+* Create a temp table in Spark/cache this table and identify duplicated rows (in case that NiFi loaded the same data again).
+* MERGE INTO the final table, INSERT new data or UPDATE if exists.
+* Archive files in the bucket.
 
 After execution, the processed files will be in your bucket but under the "processed"+date directory
 
@@ -414,7 +414,7 @@ Go back to CDW window.
 
 image::images/cdwPortal.png[]
 
-On the menu on the left choose Data Vizualisation.
+On the menu on the left choose Data Visualisation.
 
 image::images/cdwDataVizStep1.png[]
 
@@ -465,7 +465,7 @@ image::images/dataVizNewDatasetStep4.png[]
 
 Let's drag from Data on the "Dashboard Designer" to Visuals.
 
-Dimansions \-> ticker +
+Dimensions \-> ticker +
 
 ____
 Move it to Visuals \-> Dimensions
@@ -483,13 +483,13 @@ Then on Visuals choose "Packed Bubbles" +
 
 image::images/dataVizNewDatasetStep6.png[]
 
-Make it public + You have succed in a simple way your dashboard, well done + Now let's query our data and see the time travel and snapshoting capabilties of Iceberg +
+Make it public + You have succeeded in a simple way your dashboard, well done + Now let's query our data and see the time travel and snapshot capabilties of Iceberg +
 
 == Step 8: Query Iceberg Tables in Hue and Cloudera Data Visualization
 
 === Iceberg Architecture
 
-Apache Icebeg is an open table format, originally designed at Netflix in order to overcome the challenges faced when using already existing data lake formats like Apache Hive.
+Apache Iceberg is an open table format, originally designed at Netflix to overcome the challenges faced when using already existing data lake formats like Apache Hive.
 
 The design structure of Apache Iceberg is different from Apache Hive, where the metadata layer and data layer are managed and maintained on object storage like Hadoop, s3, etc.
 
@@ -509,7 +509,7 @@ After this we will be able to see the new ticker information in the dashboard an
 
 === Iceberg snapshots
 
-Let's see the Iceberg table history
+Let's see the Iceberg table history.
 
 [,sql]
 ----
@@ -523,7 +523,7 @@ image::images/cdfIcebergHistoryBeforeAddingStock.png[]
 
 {blank} +
 
-Copy and paste the snapshot_id and use it on the following impala querie :
+Copy and paste the snapshot_id and use it on the following impala queries:
 
 [,sql]
 ----
@@ -559,7 +559,7 @@ Start again the flow.
 
 ==== Check new snapshot history
 
-Now let check again the snapshot history :
+Now let check again the snapshot history:
 
 {blank} +
 
@@ -567,7 +567,7 @@ image::images/cdfIcebergHistoryAfterAddingStockStep4.png[]
 
 {blank} +
 
-As CDF has ingested a new stock value and then cde has merge those value it has created new Iceberg snapshots Copy and paste the new snapshot_id and use it on the following impala query :
+As CDF has ingested a new stock value and then CDE has merged those value it has created new Iceberg snapshots Copy and paste the new snapshot_id and use it on the following impala query:
 
 [,sql]
 ----
@@ -584,9 +584,9 @@ image::images/cdfIcebergHistoryAfterAddingStockStep5.png[]
 
 {blank} +
 
-Now, we can see that this snapshot retreive the count value for stock NVDA that has been added in the cdf dataflow stock_list parameter.
+Now, we can see that this snapshot retreives the count value for stock NVDA that has been added in the CDF stock_list parameter.
 
-If we run this query without snapshot, we get all values, because all parents and child snapshots :
+If we run this query without snapshot, we get all values, because all parents and child snapshots:
 
 [,sql]
 ----
