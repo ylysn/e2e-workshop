@@ -60,7 +60,7 @@ git clone https://github.com/DashDipti/partner-summit-2023
 == Step 2: Get Alpha Vantage Key
 
 Go to website https://www.alphavantage.co/[Alpha Vantage] +
-Choose link \-> 'Get Your Free Api Key Today'
+Choose link \-> 'GET YOUR FREE API KEY TODAY'
 
 image::images/alphaVantagePortal.png[]
 
