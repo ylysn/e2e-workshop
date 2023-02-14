@@ -59,15 +59,15 @@ git clone https://github.com/DashDipti/partner-summit-2023
 
 == Step 2: Get Alpha Vantage Key
 
-a. Go to website https://www.alphavantage.co/[Alpha Vantage] +.
-b. Choose link \-> 'GET YOUR FREE API KEY TODAY'.
+. Go to website https://www.alphavantage.co/[Alpha Vantage] +.
+. Choose link \-> 'GET YOUR FREE API KEY TODAY'.
 
 image::images/alphaVantagePortal.png[]
 
-c. Choose 'Student' for description +.
-d. Enter your own organisation name +.
-e. Enter your email address.
-f. Click on 'GET FREE API KEY'.
+. Choose 'Student' for description +.
+. Enter your own organisation name +.
+. Enter your email address.
+. Click on 'GET FREE API KEY'.
 
 image::images/claimApiKey.png[]
 
