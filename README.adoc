@@ -59,23 +59,23 @@ git clone https://github.com/DashDipti/partner-summit-2023
 
 == Step 2: Get Alpha Vantage Key
 
-Go to website https://www.alphavantage.co/[Alpha Vantage] +
-Choose link \-> 'GET YOUR FREE API KEY TODAY'
+a. Go to website https://www.alphavantage.co/[Alpha Vantage] +.
+b. Choose link \-> 'GET YOUR FREE API KEY TODAY'.
 
 image::images/alphaVantagePortal.png[]
 
-a. Choose 'Student' for description +
-b. Enter your own organisation name +
-c. Enter your email address.
+c. Choose 'Student' for description +.
+d. Enter your own organisation name +.
+e. Enter your email address.
 
 image::images/claimApiKey.png[]
 
 You should see a message like - 'Welcome to Alpha Vantage! Your dedicated access key is: YXXXXXXXXXXXXXXE. Please record this API key at a safe place for future data access.'
-Copy the access key and keep it on a notepad as you will need it later.
+
 
 image:images/getKey.png[]  +
 
-Store your given key, you will need it later.
+Copy the access key and keep it on a notepad as you will need it later.
 
 
 == Step 3: Access CDP Public Cloud Portal
