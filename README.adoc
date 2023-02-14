@@ -67,6 +67,7 @@ image::images/alphaVantagePortal.png[]
 c. Choose 'Student' for description +.
 d. Enter your own organisation name +.
 e. Enter your email address.
+f. Click on 'GET FREE API KEY'.
 
 image::images/claimApiKey.png[]
 
