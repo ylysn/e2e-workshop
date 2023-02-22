@@ -72,11 +72,9 @@ image::images/alphaVantagePortal.png[]
 image::images/claimApiKey.png[]
 
 You should see a message like - 'Welcome to Alpha Vantage! Your dedicated access key is: YXXXXXXXXXXXXXXE. 
-
-image:images/getKey.png[]  +
-
 `*Please record this API key at a safe place for future data access.*`
 
+image:images/getKey.png[]  +
 
 == Step 3: Access CDP Public Cloud Portal
 
@@ -159,29 +157,31 @@ Now let's deploy it.
 
 === Deploy DataFlow
 
-Click on the small arrow towards the catalog you just finished to create. Click on `Deploy` button.
+Click on the small arrow towards right of the catalog you just created. Click on `Deploy` button.
 
 image::images/cdfFlowDeploy.png[]
 You will need to select the workshop environment `se-workshop-1-env`.[Attention]
 Click on `Continue ->`
 
 image::images/cdfDeploymentChooseEnv.png[]
-
-
-
-image::images/cdfDeploymentStep1.png[]
-
 Give a name to this dataflow +
-Flow Name
+`Deployment Name`
 
 ____
 (user)_stock_data +
 ____
+Make sure that the right `Target Environment` is selected.
+Click `Next`.
+
+image::images/cdfDeploymentStep1.png[]
+
+Let parameters be the default ones. Click `Next`.
+
 
 image::images/cdfDeploymentStep2.png[]
 
-Let parameters by default.
-Click "Next" +
+
+
 
 image::images/cdfDeploymentStep3.png[]
 
