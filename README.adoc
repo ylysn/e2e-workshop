@@ -76,7 +76,7 @@ You should see a message like - 'Welcome to Alpha Vantage! Your dedicated access
 
 image:images/getKey.png[]  +
 
-`Copy the access key and keep it on a notepad as you will need it later.`
+`*Copy the access key and keep it on a notepad as you will need it later.*`
 
 
 == Step 3: Access CDP Public Cloud Portal
