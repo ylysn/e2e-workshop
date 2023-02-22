@@ -372,11 +372,11 @@ ____
 com.cloudera.cde.stocks.StockProcessIceberg
 ____
 
-Arguments
+`Arguments`
 
 ____
 (user)_stocks +
-s3a://se-workshop-1-aws/ + [Attention]
+s3a://se-workshop-1-aws/ + [Attention] +
 stocks +
 (user) +
 ____
@@ -389,14 +389,14 @@ image::images/cdeCreateJobStep3-SelectResource.png[]
 
 image::images/cdeCreateJobStep4-Parameters.png[]
 
-Create it, not run it yet +
+Click `Create and Run`. +
 
 This application will:
 
-* Check new files in the new directory.
-* Create a temp table in Spark/cache this table and identify duplicated rows (in case that NiFi loaded the same data again).
-* MERGE INTO the final table, INSERT new data or UPDATE if exists.
-* Archive files in the bucket.
+* Check new files in the new directory;
+* Create a temp table in Spark/cache this table and identify duplicated rows (in case that NiFi loaded the same data again);
+* MERGE INTO the final table, INSERT new data or UPDATE if exists;
+* Archive files in the bucket;
 
 After execution, the processed files will be in your bucket but under the "processed"+date directory
 
