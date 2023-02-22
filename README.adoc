@@ -180,36 +180,31 @@ Let parameters be the default ones. Click `Next`.
 
 image::images/cdfDeploymentStep2.png[]
 
-
-
-
-image::images/cdfDeploymentStep3.png[]
-
-CDP_Password +
+`CDP_Password` +
 
 ____
 Fill up your CDP workload password here +
 ____
 
-CDP_User +
+`CDP_User` +
 
 ____
 your user +
 ____
 
-S3_Path +
+`S3 Path` +
 
 ____
 stocks +
 ____
 
-api_alpha_key +
+`api_alpha_key` +
 
 ____
 your Alpha Vantage key +
 ____
 
-stock_list +
+`stock_list` +
 
 ____
 IBM +
@@ -217,6 +212,10 @@ GOOGL +
 AMZN +
 MSFT
 ____
+
+Click `Next ->`.
+
+image::images/cdfDeploymentStep3.png[]
 
 image::images/cdfDeploymentStep4.png[]
 
