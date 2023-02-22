@@ -446,39 +446,38 @@ ____
 stock_intraday_1min
 ____
 
-Select "Create".
+Click `CREATE`.
 
 image::images/dataVizNewDatasetStep2.png[]
 
-
+Select "New Dashboard" \-> image:images/newDashBoardIco.png[] + icon next to the Table that you created just now.
 
 image::images/dataVizNewDatasetStep3.png[]
-
-Select "New Dashboard" \-> image:images/newDashBoardIco.png[] +
 
 image::images/dataVizNewDatasetStep4.png[]
 
 Let's drag from Data on the "Dashboard Designer" to Visuals.
 
-Dimensions \-> ticker +
+`Dimensions` \-> `ticker` +
 
 ____
-Move it to Visuals \-> Dimensions
+Move it to Visuals \-> `Dimensions`
 ____
 
-Measures \-> #volume +
+`Measures` \-> `#volume` +
 
 ____
-Move it to Visuals \-> Measures
+Move it to Visuals \-> `Measures`
 ____
 
 image::images/dataVizNewDatasetStep5.png[]
 
-Then on Visuals choose "Packed Bubbles" +
+Then on 'VISUALS' choose `Packed Bubbles` +
 
 image::images/dataVizNewDatasetStep6.png[]
+Your Visual could be slighltly different from the image here.
 
-Make it public + You have succeeded in a simple way your dashboard, well done + Now let's query our data and see the time travel and snapshot capabilties of Iceberg +
+Make it PUBLIC by changing the option from `PRIVATE` to `PUBLIC`. Save it by clicking the `SAVE' button on the top.  You have succeeded to create a simple dashboard. Now, let's query our data and explore the time-travel and snapshot capabilties of Iceberg.
 
 == Step 8: Query Iceberg Tables in Hue and Cloudera Data Visualization
 
