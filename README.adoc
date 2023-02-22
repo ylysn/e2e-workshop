@@ -228,7 +228,8 @@ ____
 Let parameters by default +
 ____
 
-Click `Next->` +
+Click `Next->`.
+
 image::images/cdfDeploymentStep4.png[]
 
 You can define KPI's in regards what has been specified in your dataflow, but we will skip this for now.
