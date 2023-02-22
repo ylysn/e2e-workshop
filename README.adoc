@@ -64,9 +64,9 @@ git clone https://github.com/DashDipti/partner-summit-2023
 
 image::images/alphaVantagePortal.png[]
 
-. Choose [.underline]#'Student'# for the question 'Which of the following best describes you?'.
-. Enter your own organisation name.
-. Enter your email address.
+. Choose 'Student' for the question - 'Which of the following best describes you?'.
+. Enter your own organisation name for the question - 'Organization (e.g. company, university, etc.):'
+. Enter your email address for the question - 'Email:'
 . Click on 'GET FREE API KEY'.
 
 image::images/claimApiKey.png[]
@@ -76,7 +76,7 @@ You should see a message like - 'Welcome to Alpha Vantage! Your dedicated access
 
 image:images/getKey.png[]  +
 
-Copy the access key and keep it on a notepad as you will need it later.
+`Copy the access key and keep it on a notepad as you will need it later.`
 
 
 == Step 3: Access CDP Public Cloud Portal
