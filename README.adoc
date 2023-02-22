@@ -98,14 +98,14 @@ image::images/login3.png[]
 You will need to define your workload password that will be used to acess non-SSO interfaces. You may read more about it here (https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-access-paths-to-cdp.html).
 Please keep it with you. If you have forgotten it, you will be able to repeat this process and define another one.
 
-. Click on your user name at the lower left corner.
-. Click on the 'Profile' option.
+. Click on your `user name (Ex: `Test50User50`) at the lower left corner.
+. Click on the `Profile` option.
 
 image:images/setWorkloadPasswordStep1.png[]  +
 image:images/setWorkloadPasswordStep2.png[]  +
 
-. Enter your password and confirm the password.
-. Click button "Set Workload Password".
+. Enter a suitable `Password` and `Confirm Password`.
+. Click button `Set Workload Password`.
 
 
 image::images/setWorkloadPasswordStep3.png[]
@@ -114,7 +114,7 @@ image::images/setWorkloadPasswordStep3.png[]
 
 image::images/setWorkloadPasswordStep4.png[]
 
-Check that you got the message - "Workload password is currently set".
+Check that you got the message - `Workload password is currently set` or alternatively, look for a message next to `Workload Password` which says `(Workload password is currently set)`
 
 
 == Step 5: Create the flow to ingest stock data via API to Object Storage
@@ -122,15 +122,15 @@ Check that you got the message - "Workload password is currently set".
 === CDP Portal
 
 {blank} +
-Click on 'DataFlow' icon.
+Click on `DataFlow` icon as shown in the image below.
 
 image::images/portalCDF.png[]
 
 
 === Create a new CDF Catalog
 
-. On the left menu choose \-> "Catalog". +
-. Select the button \-> "Import Flow Definition".
+. On the left menu click on the option \-> `Catalog`. +
+. Click the button \-> `Import Flow Definition`.
 
 
 image::images/cdfManageDeploymentStep0.png[]
@@ -144,12 +144,11 @@ ____
 ____
 
 Nifi Flow Description
-
 ____
 Upload the file "*https://github.com/DashDipti/partner-summit-2023/blob/main/Stocks_Intraday_Alpha_Template.json[Stocks_Intraday_Alpha_Template.json]*" + [Attention]
 ____
 
-Click button "Import" +
+Click `Import` +
 
 image::images/cdfImportFowDefinition.png[]
 
@@ -162,7 +161,7 @@ Now let's deploy it.
 === Deploy DataFlow
 
 Click on the catalog you just finished to create.
-+ Click on "Deploy" button.
+Click on `Deploy` button.
 
 image::images/cdfFlowDeploy.png[]
 
