@@ -64,8 +64,8 @@ git clone https://github.com/DashDipti/partner-summit-2023
 
 image::images/alphaVantagePortal.png[]
 
-. Choose 'Student' for description +.
-. Enter your own organisation name +.
+. Choose 'Student' for description.
+. Enter your own organisation name.
 . Enter your email address.
 . Click on 'GET FREE API KEY'.
 
@@ -81,7 +81,7 @@ Copy the access key and keep it on a notepad as you will need it later.
 
 == Step 3: Access CDP Public Cloud Portal
 
-Please use the login url: https://login.cdpworkshops.cloudera.com/auth/realms/se-workshop-1/protocol/saml/clients/cdp-sso[Workshop login]
+Please use the login url: https://login.cdpworkshops.cloudera.com/auth/realms/se-workshop-1/protocol/saml/clients/cdp-sso[Workshop login] [Attention]
 
 image::images/login1.png[]
 
