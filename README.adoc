@@ -400,9 +400,7 @@ This application will:
 
 After execution, the processed files will be in your bucket but under the "processed"+date directory
 
-On step7, we will query data.
-
-But right now, let show you how to create a simple dashboard, using CDP DataViz.
+We will now create a simple dashboard using Cloudera Data Viz in the Step 7.
 
 == Step 7: Create Dashboard using CDP DataViz
 
@@ -410,20 +408,20 @@ Go back to CDW window.
 
 image::images/cdwPortal.png[]
 
-On the menu on the left choose Data Visualisation.
+In the menu on the left choose `Data Visualization`.
 
 image::images/cdwDataVizStep1.png[]
 
-Then click the "Data Viz" button on the right. +
-You will access to the following window : +
+Then click the `Data VIZ` button on the right. +
+You will access to the following window. Choose `DATA` on the upper menu bar next to the options of HOME, SQL, VISUALS. +
 
 image::images/dataVizNewDataset.png[]
 
-Choose "Data" on the upper menu.
+Click `NEW CONNECTION` button on the left upper corner.
 
 image::images/dataVizNewDatasetStep1.png[]
 
-Click "New Connection" button on the left upper corner.
+
 
 image::images/dataVizNewDatasetStep2.png[]
 
