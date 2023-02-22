@@ -136,13 +136,13 @@ image::images/cdfManageDeploymentStep0.png[]
 
 Fill up those parameters : +
 
-Flow Name +
+`Flow Name` +
 
 ____
 (yourUserName)_stock_data +
 ____
 
-Nifi Flow Description
+`Nifi Flow Configuration`
 ____
 Upload the file "*https://github.com/DashDipti/partner-summit-2023/blob/main/Stocks_Intraday_Alpha_Template.json[Stocks_Intraday_Alpha_Template.json]*" + [Attention]
 ____
@@ -159,16 +159,15 @@ Now let's deploy it.
 
 === Deploy DataFlow
 
-Click on the catalog you just finished to create.
-Click on `Deploy` button.
+Click on the small arrow towards the catalog you just finished to create. Click on `Deploy` button.
 
 image::images/cdfFlowDeploy.png[]
-
-Click on "Deploy" button.
+You will need to select the workshop environment `se-workshop-1-env`.[Attention]
+Click on `Continue ->`
 
 image::images/cdfDeploymentChooseEnv.png[]
 
-You will need to select the workshop environment "se-workshop-1-env".
+
 
 image::images/cdfDeploymentStep1.png[]
 
