@@ -60,23 +60,22 @@ git clone https://github.com/DashDipti/partner-summit-2023
 == Step 2: Get Alpha Vantage Key
 
 . Go to website https://www.alphavantage.co/[Alpha Vantage].
-. Choose link \-> 'GET YOUR FREE API KEY TODAY'.
+. Choose link \-> `GET YOUR FREE API KEY TODAY`.
 
 image::images/alphaVantagePortal.png[]
 
-. Choose 'Student' for the question - 'Which of the following best describes you?'.
-. Enter your own organisation name for the question - 'Organization (e.g. company, university, etc.):'
-. Enter your email address for the question - 'Email:'
-. Click on 'GET FREE API KEY'.
+. Choose 'Student' for the question - `Which of the following best describes you?`.
+. Enter your own organisation name for the question - `Organization (e.g. company, university, etc.):`
+. Enter your email address for the question - `Email:`
+. Click on `GET FREE API KEY`.
 
 image::images/claimApiKey.png[]
 
-You should see a message like - 'Welcome to Alpha Vantage! Your dedicated access key is: YXXXXXXXXXXXXXXE. Please record this API key at a safe place for future data access.'
-
+You should see a message like - 'Welcome to Alpha Vantage! Your dedicated access key is: YXXXXXXXXXXXXXXE. 
 
 image:images/getKey.png[]  +
 
-`*Copy the access key and keep it on a notepad as you will need it later.*`
+`*Please record this API key at a safe place for future data access.*`
 
 
 == Step 3: Access CDP Public Cloud Portal
@@ -85,7 +84,7 @@ Please use the login url: https://login.cdpworkshops.cloudera.com/auth/realms/se
 
 image::images/login1.png[]
 
-Enter the username and password shared by your instructor.
+Enter the `Username` and `Password` shared by your instructor.
 
 image::images/login2.png[]
 
