@@ -273,21 +273,19 @@ Let's take a quick look together.
 image::images/nifiDataflow.png[]
 
 
-At this stage you can suspend this dataflow, go back to "Deployment Manager" \-> "Action" \-> "Suspend flow".
-We will add a new stock later and restart it. [Attention]
+At this stage you can suspend this dataflow, go back to `Deployment Manager` \-> `Actions` \-> `Suspend flow`.
+We will add a new stock later and restart it.
 
 image::images/cdfManageDeploymentStep2.png[]
 
 === Create Iceberg Table
 
-{blank} +
-
 Now we are going to create the Iceberg table.
-+ From the CDP Portal or CDP Menu choose "Data Warehouse".
+From the CDP Portal or CDP Menu choose `Data Warehouse`.
 
 image::images/portalCDW.png[]
 
-From the CDW Overview window, click the "HUE" button on the corner left.
+From the CDW `Overview` window, click the "HUE" button on the right corner as shown under the `Virtual Warehouses` to the right.
 
 image::images/cdwOverview.png[]
 
@@ -295,8 +293,10 @@ Now you're accessing to the sql editor called "HUE".
 
 image::images/hueOverview.png[]
 
-Let's *_select the Impala engine_* that you will be using for interacting with database. +
-Create database using your login user050, for example replace (user) by user050 for database creation :
+Let's `Select the Impala engine` that you will be using for interacting with database.
+Make sure that you can see `Impala` instead of `Unified Analytics` on top of the area where you would write queries.
+
+Create database using your login `For example: user050`. Replace `<user>` by your username for database creation in the command below.
 
 [,sql]
 ----
@@ -304,11 +304,11 @@ Create database using your login user050, for example replace (user) by user050 
 CREATE DATABASE <user>_stocks;
 ----
 
-See the result.
+See the result to notice a message `Database has been created`.
 
 image::images/cdwCreateDatabase.png[]
 
-After create a Iceberg table, change (user) with your login:
+After creating the database create an Iceberg table. Replace `<user>` by your username for iceberg table creation in the command below.
 
 [,sql]
 ----
@@ -329,46 +329,44 @@ PARTITIONED BY (
 STORED AS iceberg;
 ----
 
-See the result
+See the result to notice a message `Table has been created`.
 
 image::images/cdwCreatIcebergTable.png[]
 
 Let's now create our engineering process.
-+
+
 
 == Step 6: Process and Ingest Iceberg using CDE
 
-Now we will use Cloudera Data Engineering to check the files in the object storage, compare if it's new data, and insert them into the Iceberg table.
+Now we will use Cloudera Data Engineering to check the files in the object storage that were populated as a part of the above DataFlow run and then compare if it's new data, and insert them into the Iceberg table.
 
+From the CDP Portal or CDP Menu choose `Data Engineering`.
 image::images/portalCDE.png[]
 
-From the CDP Portal or CDP Menu choose "Data Engineering".
+Let's create a job. Click on `Jobs` and then click `Create Job`.
 
 image::images/cdeCreateJobStep1.png[]
 
-Let's create a job \-> click Create Job".
-
-image::images/cdeCreateJobStep2.png[]
-
-Job Type +
+Replace `(user)` with your username wherever it is applicable.
+`Job Type`
 
 ____
-Choose Spark 3.2.0 +
+Choose Spark 3.2.0
 ____
 
-Name +
+`Name`
 
 ____
-(user)-StockIceberg +
+(user)-StockIceberg
 ____
 
-Application File +
+`Application File`
 
 ____
 Select  StockIcebergResource \-> stockdatabase_2.12-1.0.jar
 ____
 
-Main Class +
+`Main Class`
 
 ____
 com.cloudera.cde.stocks.StockProcessIceberg
@@ -378,10 +376,14 @@ Arguments
 
 ____
 (user)_stocks +
-s3a://se-workshop-1-aws/ +
+s3a://se-workshop-1-aws/ + [Attention]
 stocks +
 (user) +
 ____
+
+
+image::images/cdeCreateJobStep2.png[]
+
 
 image::images/cdeCreateJobStep3-SelectResource.png[]
 
