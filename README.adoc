@@ -421,8 +421,8 @@ Click `NEW CONNECTION` button on the left upper corner.
 
 image::images/dataVizNewDatasetStep1.png[]
 
-Replace `(user)` with your username wherever it is applicable.
-`Name` +
+Replace `(user)` with your username wherever it is applicable. +
+`Dataset title' +
 
 ____
 (user)_dataset +
@@ -450,7 +450,7 @@ Click `CREATE`.
 
 image::images/dataVizNewDatasetStep2.png[]
 
-Select "New Dashboard" \-> image:images/newDashBoardIco.png[] + icon next to the Table that you created just now.
+Select "New Dashboard" \-> image:images/newDashBoardIco.png[] icon next to the Table that you created just now.
 
 image::images/dataVizNewDatasetStep3.png[]
 
@@ -472,12 +472,12 @@ ____
 
 image::images/dataVizNewDatasetStep5.png[]
 
-Then on 'VISUALS' choose `Packed Bubbles` +
+Then on 'VISUALS' choose `Packed Bubbles`. +
 
 image::images/dataVizNewDatasetStep6.png[]
-Your Visual could be slighltly different from the image here.
+Your visual could be slighltly different from the image here.
 
-Make it PUBLIC by changing the option from `PRIVATE` to `PUBLIC`. Save it by clicking the `SAVE' button on the top.  You have succeeded to create a simple dashboard. Now, let's query our data and explore the time-travel and snapshot capabilties of Iceberg.
+Make it PUBLIC by changing the option from `PRIVATE` to `PUBLIC`. Save it by clicking the `SAVE` button on the top.  You have succeeded to create a simple dashboard. Now, let's query our data and explore the time-travel and snapshot capabilties of Iceberg.
 
 == Step 8: Query Iceberg Tables in Hue and Cloudera Data Visualization
 
