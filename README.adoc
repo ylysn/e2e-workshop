@@ -347,7 +347,8 @@ Let's create a job. Click on `Jobs` and then click `Create Job`.
 
 image::images/cdeCreateJobStep1.png[]
 
-Replace `(user)` with your username wherever it is applicable.
+Replace `(user)` with your username wherever it is applicable. For example: wuser00.
+
 `Job Type`
 
 ____
