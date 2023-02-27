@@ -78,7 +78,7 @@ image:images/getKey.png[]  +
 
 == Step 3: Access CDP Public Cloud Portal
 
-Please use the login url: https://login.cdpworkshops.cloudera.com/auth/realms/se-workshop-1/protocol/saml/clients/cdp-sso[Workshop login] [Attention]
+Please use the login url: http://3.109.161.118/auth/realms/workshop/protocol/saml/clients/samlclient[Workshop login]
 
 image::images/login1.png[]
 
