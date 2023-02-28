@@ -109,9 +109,10 @@ image::images/step4/3.PNG[]
 
 {blank} +
 
+Check that you got the message - `Workload password is currently set` or alternatively, look for a message next to `Workload Password` which says `(Workload password is currently set)`
+
 image::images/step4/4.PNG[]
 
-Check that you got the message - `Workload password is currently set` or alternatively, look for a message next to `Workload Password` which says `(Workload password is currently set)`
 
 
 == Step 5: Create the flow to ingest stock data via API to Object Storage
