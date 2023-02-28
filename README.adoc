@@ -165,26 +165,26 @@ Now let's deploy it.
 
 Click on the small arrow towards right of the catalog you just created. Click on `Deploy` button.
 
-image::images/cdfFlowDeploy.png[]
+image:images/step5/6.PNG[]  +
 You will need to select the workshop environment *`meta-workshop`*.[Attention]
 Click on `Continue ->`
 
-image::images/cdfDeploymentChooseEnv.png[]
+image:images/step5/7.PNG[]  +
 Give a name to this dataflow +
 `Deployment Name`
 
 ____
-(user)_stock_data +
+(user)_stock_dataflow +
 ____
 Make sure that the right `Target Environment` is selected.
 Click `Next`.
 
-image::images/cdfDeploymentStep1.png[]
+image:images/step5/8.PNG[]  +
 
 Let parameters be the default ones. Click `Next`.
 
 
-image::images/cdfDeploymentStep2.png[]
+image:images/step5/9.PNG[]  +
 
 `CDP_Password` +
 
@@ -221,14 +221,14 @@ ____
 
 Click `Next ->`.
 
-image::images/cdfDeploymentStep3.png[]
+image:images/step5/10.PNG[]  +
 `Nifi Node Sizing` +
 
 ____
 Extra Small +
 ____
 
-`Enable Auto scaling` +
+Slide button to right to `Enable Auto scaling` and let the min nodes be 1 and max nodes be 3. +
 
 ____
 Let parameters by default +
@@ -236,55 +236,66 @@ ____
 
 Click `Next->`.
 
-image::images/cdfDeploymentStep4.png[]
+image:images/step5/11.PNG[]  +
 
 You can define KPI's in regards what has been specified in your dataflow, but we will skip this for now.
-+ Click `Next->`+
+Click `Next->`+
 
-image::images/cdfDeploymentStep5.png[]
+image:images/step5/12.PNG[]  +
 
 Click `Deploy` to launch the deployment. +
 
-image::images/cdfDeploymentStepFinal.png[]
+image:images/step5/13.PNG[]  +
 
-Check the deployment on the run and look for the status `Good Health`.
+The deployment will get initiated. Check the deployment on the run and look for the status `Good Health`.
 
-image::images/cdfDeploymentStepDeploying.png[]
+image:images/step5/14.PNG[]  +
+
+image:images/step5/15.PNG[]  +
 
 Dataflow is up and running.
-In minutes we will start receiving stock information into our bucket.
-If you want you can check in your bucket under the path `s3a://meta-workshop/user/(yourusername)/stocks/new`. [Attention]
 
-image::images/cdfWorking.png[]
+image:images/step5/16.PNG[]  +
+
+In minutes we will start receiving stock information into our bucket.
+If you want you can check in your bucket under the path `s3a://meta-workshop/user/(username)/stocks/new`.
 
 
 === View Nifi DataFlow
 
 Click on blue arrow on the right of your deployed dataflow.
 
-image::images/cdfWorking.png[]
+image:images/step5/16.PNG[]  +
 
 Select `Manage Deployment` on top right corner.
 
-image::images/cdfManageDeploymentStep1.png[]
+image:images/step5/17.PNG[]  +
 
 On this window, choose `Actions` \-> `View in NiFi`.
 
-image::images/cdfManageDeploymentStep2.png[]
+image:images/step5/18.PNG[]  +
+
+image:images/step5/19.PNG[]  +
 
 
 You can see the Nifi data flow that has been deployed from the json file.
 Let's take a quick look together.
 
-image::images/nifiDataflow.png[]
+image:images/step5/20.PNG[]  +
 
 
 At this stage you can suspend this dataflow, go back to `Deployment Manager` \-> `Actions` \-> `Suspend flow`.
 We will add a new stock later and restart it.
 
-image::images/cdfManageDeploymentStep2.png[]
+image:images/step5/21.PNG[]  +
 
-=== Create Iceberg Table
+image:images/step5/22.PNG[]  +
+
+Confirm that the status is 'Suspended'.
+
+image:images/step5/23.PNG[]  +
+
+== Step 6: Create Iceberg Table
 
 Now we are going to create the Iceberg table.
 From the CDP Portal or CDP Menu choose `Data Warehouse`.
@@ -342,7 +353,7 @@ image::images/cdwCreatIcebergTable.png[]
 Let's now create our engineering process.
 
 
-== Step 6: Process and Ingest Iceberg using CDE
+== Step 7: Process and Ingest Iceberg using CDE
 
 Now we will use Cloudera Data Engineering to check the files in the object storage that were populated as a part of the above DataFlow run and then compare if it's new data, and insert them into the Iceberg table.
 
@@ -409,7 +420,7 @@ After execution, the processed files will be in your bucket but under the "proce
 
 We will now create a simple dashboard using Cloudera Data Viz in the Step 7.
 
-== Step 7: Create Dashboard using CDP DataViz
+== Step 8: Create Dashboard using CDP DataViz
 
 Go back to CDW window.
 
@@ -486,7 +497,7 @@ Your visual could be slighltly different from the image here.
 
 Make it PUBLIC by changing the option from `PRIVATE` to `PUBLIC`. Save it by clicking the `SAVE` button on the top.  You have succeeded to create a simple dashboard. Now, let's query our data and explore the time-travel and snapshot capabilties of Iceberg.
 
-== Step 8: Query Iceberg Tables in Hue and Cloudera Data Visualization
+== Step 9: Query Iceberg Tables in Hue and Cloudera Data Visualization
 
 === Iceberg Architecture
 
