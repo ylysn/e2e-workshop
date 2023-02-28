@@ -86,7 +86,7 @@ image::images/step3/1.PNG[]
 
 You should be able to get the following home page of CDP Public Cloud.
 
-image::images/login3.png[]
+image::images/step3/2.PNG[]
 
 == Step 4: Define Workload Password
 
