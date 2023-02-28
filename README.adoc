@@ -681,7 +681,7 @@ Now let check again the snapshot history by going to Hue.
 [,sql]
 ----
 
-DESCRIBE HISTORY <wuser00>_stocks.stock_intraday_1min;
+DESCRIBE HISTORY <user>_stocks.stock_intraday_1min;
 ----
 
 {blank} +
@@ -706,11 +706,11 @@ image:images/step9/23.PNG[]  +
 Now, we can see that this snapshot retrieves the count value for stock NVDA that has been added in the CDF `stock_list` parameter.
 
 === Show Data Files
-Replace <user> with your username. For example: wuser00.
+Replace <user> with your username. For example: `wuser00`.
 [,sql]
 ----
 
-show files in <user50>_stocks.stock_intraday_1min;
+show files in <user>_stocks.stock_intraday_1min;
 ----
 
 {blank} +
@@ -720,11 +720,11 @@ image:images/step9/24.PNG[]  +
 {blank} +
 
 
-Check the Iceberg table.
+Check the Iceberg table. Replace <user> with your username. For example: `wuser00`.
 [,sql]
 ----
 
-describe formatted <user50>_stocks.stock_intraday_1min;
+describe formatted <user>_stocks.stock_intraday_1min;
 ----
 
 {blank} +
