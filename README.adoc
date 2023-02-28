@@ -551,7 +551,7 @@ Make it PUBLIC by changing the option from `PRIVATE` to `PUBLIC`. Save it by cli
 
 == Step 9: Query Iceberg Tables in Hue and Cloudera Data Visualization
 
-=== Step 9(a): Iceberg Architecture
+=== Step 9(a): For Reading only: Iceberg Architecture
 
 Apache Iceberg is an open table format, originally designed at Netflix to overcome the challenges faced when using already existing data lake formats like Apache Hive.
 
@@ -599,7 +599,7 @@ image:images/step9/5.PNG[]  +
 === Step 9(c): Iceberg snapshots
 
 Let's see the Iceberg table history.
-Replace <user> with your username. For example: `wuser00``.
+Replace <user> with your username. For example: `wuser00`.
 
 [,sql]
 ----
@@ -613,7 +613,7 @@ image:images/step9/6.PNG[]  +
 
 {blank} +
 
-Copy and paste the `snapshot_id`` and use it on the following impala queries. Replace <user> with your username. For example: `wuser00`.
+Copy and paste the `snapshot_id` and use it on the following impala queries. Replace <user> with your username. For example: `wuser00`.
 
 [,sql]
 ----
@@ -633,7 +633,8 @@ image:images/step9/7.PNG[]  +
 === Step 9(d): Add a New stock (NVDA)
 
 We shall load new data and this time we will include additional stock ticker - `NVDA`.
-Go to CDF, and find the data flow that you had created earlier. It should be in suspended state if you had suspended it towards the end of `Step 5: Create the flow to ingest stock data via API to Object Storage` section of the workshop.
+Go to CDF, and find the data flow that you had created earlier. It should be in suspended state if you had suspended it towards the end of +
+`Step 5: Create the flow to ingest stock data via API to Object Storage` section of the workshop.
 
 Go to Cloudera Data Flow option and look for the flow that you had created earlier based on your user name. Ex - `wuser00_stock_dataflow`. Click on the arrow towards the right side of the flow and then click on `Manage Deployment`.
 
