@@ -6,7 +6,7 @@ Version : 2.0.0 + date : 15/02/2023 +
 
 '''
 
-image::images/bannersa.png[]
+image:images/step0/bannersa.PNG[]  +
 
 This document guides students through the Hands-on lab for Partner Summit 2023.
 It will take you step by step to completing the pre-requisites and deliver this demo.
@@ -37,7 +37,7 @@ With Cloudera Data Engineering, you define virtual clusters with a range of CPU 
 *_CDP Data Visualization_* enables data engineers, business analysts, and data scientists explore data quickly and easily, collaborate, and share insights across the data lifecycle--from data ingest to data insights and beyond.
 Delivered natively as part of Cloudera Data Platform (CDP), Data Visualization delivers a consistent and easy to use data visualization experience with intuitive and accessible drag-and-drop dashboards and custom application creation.
 
-image::images/architecture.png[]
+image:images/step0/architecture.PNG[]  +
 
 == Pre-requisites
 
