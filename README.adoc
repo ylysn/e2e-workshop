@@ -368,32 +368,41 @@ Let's now create our engineering process.
 
 Now we will use Cloudera Data Engineering to check the files in the object storage that were populated as a part of the above DataFlow run and then compare if it's new data, and insert them into the Iceberg table.
 
+Click on `Home` option on top left corner to go to the landing page.
+
+image:images/step7/1.PNG[]  +
+
 From the CDP Portal or CDP Menu choose `Data Engineering`.
-image::images/portalCDE.png[]
 
-Let's create a job. Click on `Jobs` and then click `Create Job`.
+image:images/step7/2.PNG[]  +
 
-image::images/cdeCreateJobStep1.png[]
+Let's create a job. 
+Click on `Jobs`. Make sure that you can see `meta-workshop-de` on the top.  Then click `Create Job` button in the right side of the screen. 
+*Note*: This page may differ a little bit depending on the fact that some user may have created a job prior to you or not.
 
-Replace `(user)` with your username wherever it is applicable. For example: wuser00.
+image:images/step7/3.PNG[]  +
 
-`Job Type`
+`Fill the following values carefully.`
+
+`Job Type*`
 
 ____
 Choose Spark 3.2.0
 ____
 
-`Name`
+`Name*`. Replace `(user)` with your username. For example: `wuser00-StockIceberg`.
 
 ____
 (user)-StockIceberg
 ____
 
-`Application File`
+Make sure `Application File` that is selected is `File`. Select the option `Select from Resource`.
 
 ____
-Select  StockIcebergResource \-> stockdatabase_2.12-1.0.jar
+Select  stockdata-job \-> stockdatabase_2.12-1.0.jar
 ____
+
+image:images/step7/4.PNG[]  +
 
 `Main Class`
 
@@ -401,24 +410,21 @@ ____
 com.cloudera.cde.stocks.StockProcessIceberg
 ____
 
+
 `Arguments`
 
 ____
 (user)_stocks +
-s3a://meta-workshop/ + [Attention] +
+s3a://meta-workshop/
 stocks +
 (user) +
 ____
 
 
-image::images/cdeCreateJobStep2.png[]
+image:images/step7/5.PNG[]  +
 
+Click the `Create and Run` button at the bottom. (There is no screenshot for the same).
 
-image::images/cdeCreateJobStep3-SelectResource.png[]
-
-image::images/cdeCreateJobStep4-Parameters.png[]
-
-Click `Create and Run`. +
 
 This application will:
 
@@ -430,6 +436,19 @@ This application will:
 After execution, the processed files will be in your bucket but under the "processed"+date directory
 
 We will now create a simple dashboard using Cloudera Data Viz in the Step 7.
+
+== Step 7 (Optional): Checking Logs of CDE Job Run
+
+image:images/step7/6.PNG[]  +
+
+image:images/step7/7.PNG[]  +
+
+image:images/step7/8.PNG[]  +
+
+image:images/step7/9.PNG[]  +
+
+image:images/step7/10.PNG[]  +
+
 
 == Step 8: Create Dashboard using CDP DataViz
 
