@@ -411,6 +411,7 @@ ____
 com.cloudera.cde.stocks.StockProcessIceberg
 ____
 
+Make sure the below arguments are filled so that (user) is replaced with the actual username. For example `wuser00_stocks` and instead of (user) at the end it is `wuser00`. Make sure to check the screenshot to comply.
 
 `Arguments`
 
