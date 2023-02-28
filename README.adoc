@@ -411,7 +411,7 @@ ____
 com.cloudera.cde.stocks.StockProcessIceberg
 ____
 
-Make sure the below arguments are filled so that (user) is replaced with the actual username. For example `wuser00_stocks` and instead of (user) at the end it is `wuser00`. Make sure to check the screenshot to comply.
+Make sure the below arguments are filled so that (user) is replaced with the actual username. For example `wuser00_stocks` and instead of (user) at the end it is `wuser00`. Make sure to check the next screenshot to comply.
 
 `Arguments`
 
@@ -435,24 +435,36 @@ This application will:
 * MERGE INTO the final table, INSERT new data or UPDATE if exists;
 * Archive files in the bucket;
 
-After execution, the processed files will be in your bucket but under the "processed"+date directory
-
-We will now create a simple dashboard using Cloudera Data Viz in the Step 7.
-
-== Step 7 (Optional): Checking Logs of CDE Job Run
+After execution, the processed files will be in your bucket but under the "processed"+date directory. 
 
 image:images/step7/6.PNG[]  +
 
+You don't have access to it. The instructor has access to the same. The next section is optional.
+
+== Step 7 (Optional): Checking Logs of CDE Job Run
+Click on the Job Name - `wuser-StockIceberg`.
 image:images/step7/7.PNG[]  +
 
+Click on the Run Id.
 image:images/step7/8.PNG[]  +
 
+You will reach the `Trends` option.
 image:images/step7/9.PNG[]  +
 
+Click the `Logs` and go through the various tabs like 'stderr+stdout' to understand better.
 image:images/step7/10.PNG[]  +
+
+Under `Logs` tab check for the following. In most of the cases `Processing tem dirs` indicates that job would run successfully and is in it's last stages.
+image:images/step7/11.PNG[]
 
 
 == Step 8: Create Dashboard using CDP DataViz
+
+Before moving ahead with this section make sure that the CDE job ran successfully. Go to `Job Runs` option in the left pane and look for the job that you ran now. It should have a green tick box next to it's name.
+
+image:images/step8/1.PNG[] +
+
+We will now create a simple dashboard using Cloudera Data Viz in the Step 7.
 
 Go back to CDW window.
 
