@@ -98,9 +98,10 @@ Please keep it with you. If you have forgotten it, you will be able to repeat th
 
 image:images/step4/1.PNG[]  +
 
-
+. Click option `Set Workload Password`.
 . Enter a suitable `Password` and `Confirm Password`.
 . Click button `Set Workload Password`.
+
 
 image:images/step4/2.PNG[]  +
 
@@ -108,7 +109,7 @@ image::images/step4/3.PNG[]
 
 {blank} +
 
-image::images/setWorkloadPasswordStep4.png[]
+image::images/step4/4.PNG[]
 
 Check that you got the message - `Workload password is currently set` or alternatively, look for a message next to `Workload Password` which says `(Workload password is currently set)`
 
