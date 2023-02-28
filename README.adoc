@@ -675,13 +675,22 @@ As CDF has ingested a new stock value and then CDE has merged those value it has
 
 === Step 9(e): Check new snapshot history
 
-Now let check again the snapshot history:
-
+Now let check again the snapshot history by going to Hue.
 
 [,sql]
 ----
 
-SELECT count(*), ticker
+DESCRIBE HISTORY <wuser00>_stocks.stock_intraday_1min;
+----
+
+{blank} +
+
+image:images/step9/22.PNG[]  +
+
+[,sql]
+----
+
+SELECT ticker, count(*)
 FROM <user>_stocks.stock_intraday_1min
 FOR SYSTEM_VERSION AS OF <new_snapshot_id>
 GROUP BY ticker;
@@ -689,36 +698,36 @@ GROUP BY ticker;
 
 {blank} +
 
-image::images/cdfIcebergHistoryAfterAddingStockStep5.png[]
+image:images/step9/23.PNG[]  +
 
 {blank} +
 
 Now, we can see that this snapshot retrieves the count value for stock NVDA that has been added in the CDF `stock_list` parameter.
-
-If we run this query without snapshot, we get all values, because all parents and child snapshots. Replace <user> with your username. For example: wuser00.
-
-[,sql]
-----
-
-SELECT count(*), ticker
-FROM <user>_stocks.stock_intraday_1min
-GROUP BY ticker;
-----
-
-{blank} +
-
-image::images/cdwSimpleSelect.png[]
 
 === Show Data Files
 Replace <user> with your username. For example: wuser00.
 [,sql]
 ----
 
-show files in <user50>_stocks.stock_intraday_1min
+show files in <user50>_stocks.stock_intraday_1min;
 ----
 
 {blank} +
 
-image::images/cdwShowFiles.png[]
+image:images/step9/24.PNG[]  +
+
+{blank} +
+
+
+Check the Iceberg table.
+[,sql]
+----
+
+describe formatted <user50>_stocks.stock_intraday_1min;
+----
+
+{blank} +
+
+image:images/step9/25.PNG[]  +
 
 {blank} +
