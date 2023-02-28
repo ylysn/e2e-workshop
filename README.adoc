@@ -79,12 +79,9 @@ image:images/getKey.png[]  +
 == Step 3: Access CDP Public Cloud Portal
 
 Please use the login url: http://3.109.161.118/auth/realms/workshop/protocol/saml/clients/samlclient[Workshop login]
-
-image::images/login1.png[]
-
 Enter the `Username` and `Password` shared by your instructor.
+image::images/step3/1.PNG[]
 
-image::images/login2.png[]
 
 You should be able to get the following home page of CDP Public Cloud.
 
