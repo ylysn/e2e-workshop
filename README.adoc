@@ -551,7 +551,7 @@ Make it PUBLIC by changing the option from `PRIVATE` to `PUBLIC`. Save it by cli
 
 == Step 9: Query Iceberg Tables in Hue and Cloudera Data Visualization
 
-=== Iceberg Architecture
+=== Step 9(a): Iceberg Architecture
 
 Apache Iceberg is an open table format, originally designed at Netflix to overcome the challenges faced when using already existing data lake formats like Apache Hive.
 
@@ -571,7 +571,7 @@ image::images/iceberg-architecture.png[]
 Our example will load the intraday stock daily since the free API does not give real-time data, but we can change the Cloudera Dataflow Parameter to add one more ticker and we've scheduled to run hourly the CDE process.
 After this we will be able to see the new ticker information in the dashboard and also *perform time travel using Iceberg!*
 
-=== Logging into Hue
+=== Step 9(b): Logging into Hue
 Click on `Home` option on top left corner to go to the landing page.
 
 image:images/step9/1.PNG[]  +
@@ -596,11 +596,10 @@ Make sure that you can see `Impala` instead of `Unified Analytics` on top of the
 image:images/step9/5.PNG[]  +
 
 
-
-=== Iceberg snapshots
+=== Step 9(c): Iceberg snapshots
 
 Let's see the Iceberg table history.
-Replace <user> with your username. For example: wuser00.
+Replace <user> with your username. For example: `wuser00``.
 
 [,sql]
 ----
@@ -610,16 +609,16 @@ DESCRIBE HISTORY <user>_stocks.stock_intraday_1min;
 
 {blank} +
 
-image::images/cdfIcebergHistoryBeforeAddingStock.png[]
+image:images/step9/6.PNG[]  +
 
 {blank} +
 
-Copy and paste the snapshot_id and use it on the following impala queries. Replace <user> with your username. For example: wuser00.
+Copy and paste the `snapshot_id`` and use it on the following impala queries. Replace <user> with your username. For example: `wuser00`.
 
 [,sql]
 ----
 
-SELECT count(*), ticker
+SELECT ticker, count(*)
 FROM <user>_stocks.stock_intraday_1min
 FOR SYSTEM_VERSION AS OF <snapshot_id>
 GROUP BY ticker;
@@ -627,38 +626,57 @@ GROUP BY ticker;
 
 {blank} +
 
-image::images/cdfIcebergHistoryAfterAddingStockStep3.png[]
+image:images/step9/7.PNG[]  +
 
 {blank} +
 
-==== Add new stock
+=== Step 9(d): Add a New stock (NVDA)
 
-Go to CDF, choose Actions and Suspend the flow.
-Add in parameters called `stock_list`  the stock NVDA (Nvidia).
+We shall load new data and this time we will include additional stock ticker - `NVDA`.
+Go to CDF, and find the data flow that you had created earlier. It should be in suspended state if you had suspended it towards the end of `Step 5: Create the flow to ingest stock data via API to Object Storage` section of the workshop.
+
+Go to Cloudera Data Flow option and look for the flow that you had created earlier based on your user name. Ex - `wuser00_stock_dataflow`. Click on the arrow towards the right side of the flow and then click on `Manage Deployment`.
+
+image:images/step9/8.PNG[]  +
+
+image:images/step9/9.PNG[]  +
+
+Click on the `Parameters` tab and then scroll down to the text box where you had entered stock tickers (`stock_list`). 
+
+image:images/step9/10.PNG[]  +
+
+Add the stock 'NVDA'. And then click on `Apply Changes`.
+image:images/step9/11.PNG[]  +
+image:images/step9/12.PNG[]  +
+
+Now, start the flow again by clicking `Actions` and then `Start flow`.
+image:images/step9/13.PNG[]  +
+image:images/step9/14.PNG[]  +
+image:images/step9/15.PNG[]  +
+
+The S3 bucket gets updated with new data and this time it includes the new ticker 'NVDA' as well. We will see it. You can see the same in S3 bucket as shown here.
+image:images/step9/16.PNG[]  +
+
+Now go to Cloudera Data Engineering and `Jobs`. Choose the CDE Job that you had created earlier with your username.
+image:images/step9/17.PNG[]  +
 
 {blank} +
 
-image:images/cdfAddStock.png[] +
+image:images/step9/18.PNG[]  +
+image:images/step9/19.PNG[]  +
 
-Let's add on the parameter `stock_list` the stock NVDA (NVIDIA) and Apply changes.
-
-image::images/cdfAddStockFinal.png[]
-
-{blank} +
-
-Start the flow again.
-
-==== Check new snapshot history
-
-Now let check again the snapshot history:
-
-{blank} +
-
-image::images/cdfIcebergHistoryAfterAddingStockStep4.png[]
+Click on `Job Runs` in the left to see the status of the job that was initiated now. It should succeed.
+image:images/step9/20.PNG[]  +
+image:images/step9/21.PNG[]  +
 
 {blank} +
 
 As CDF has ingested a new stock value and then CDE has merged those value it has created new Iceberg snapshots. Copy and paste the new snapshot_id and use it on the following impala query.
+
+=== Step 9(e): Check new snapshot history
+
+Now let check again the snapshot history:
+
 
 [,sql]
 ----
