@@ -80,6 +80,7 @@ image:images/getKey.png[]  +
 
 Please use the login url: http://3.109.161.118/auth/realms/workshop/protocol/saml/clients/samlclient[Workshop login]
 Enter the `Username` and `Password` shared by your instructor.
+
 image::images/3-1.png[]
 
 
