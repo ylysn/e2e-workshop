@@ -119,7 +119,7 @@ image::images/step4/4.PNG[]
 
 === CDP Portal
 
-{blank} +
+
 
 Click on `Home` option on top left corner to go to the landing page.
 
@@ -133,7 +133,7 @@ image:images/step5/2.PNG[]  +
 === Create a new CDF Catalog
 
 . On the left menu click on the option \-> `Catalog`. +
-. Click the button \-> `Import Flow Definition`.
+. On the top right corner click the button \-> `Import Flow Definition`.
 
 
 image:images/step5/3.PNG[]  +
@@ -143,19 +143,19 @@ Fill up those parameters : +
 `Flow Name` +
 
 ____
-(yourUserName)_stock_data +
+(user)_stock_data +
 ____
 
 `Nifi Flow Configuration`
 ____
-Upload the file "*https://github.com/DashDipti/partner-summit-2023/blob/main/Stocks_Intraday_Alpha_Template.json[Stocks_Intraday_Alpha_Template.json]*" + [Attention]
+Upload the file "*https://github.com/DashDipti/partner-summit-2023/blob/main/Stocks_Intraday_Alpha_Template.json[Stocks_Intraday_Alpha_Template.json]*"
 ____
 
 Click `Import` +
 
 image:images/step5/4.PNG[]  +
 
-The new catalog has been added. +
+The new catalog has been added. Type in the name so that you can only see the one that you had created and not the others. For example - `wuser00-stock-data` +
 
 image:images/step5/5.PNG[]  +
 
@@ -166,7 +166,7 @@ Now let's deploy it.
 Click on the small arrow towards right of the catalog you just created. Click on `Deploy` button.
 
 image::images/cdfFlowDeploy.png[]
-You will need to select the workshop environment `meta-workshop`.[Attention]
+You will need to select the workshop environment *`meta-workshop`*.[Attention]
 Click on `Continue ->`
 
 image::images/cdfDeploymentChooseEnv.png[]
