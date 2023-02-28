@@ -120,9 +120,14 @@ image::images/step4/4.PNG[]
 === CDP Portal
 
 {blank} +
+
+Click on `Home` option on top left corner to go to the landing page.
+
+image:images/step5/1.PNG[]  +
+
 Click on `DataFlow` icon as shown in the image below.
 
-image::images/portalCDF.png[]
+image:images/step5/2.PNG[]  +
 
 
 === Create a new CDF Catalog
@@ -131,7 +136,7 @@ image::images/portalCDF.png[]
 . Click the button \-> `Import Flow Definition`.
 
 
-image::images/cdfManageDeploymentStep0.png[]
+image:images/step5/3.PNG[]  +
 
 Fill up those parameters : +
 
@@ -148,11 +153,11 @@ ____
 
 Click `Import` +
 
-image::images/cdfImportFowDefinition.png[]
+image:images/step5/4.PNG[]  +
 
 The new catalog has been added. +
 
-image::images/cdfFlowCatalogCreated.png[]
+image:images/step5/5.PNG[]  +
 
 Now let's deploy it.
 
