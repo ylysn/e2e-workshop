@@ -301,21 +301,28 @@ image:images/step5/23.PNG[]  +
 == Step 6: Create Iceberg Table
 
 Now we are going to create the Iceberg table.
+Click on `Home` option on top left corner to go to the landing page.
+
+image:images/step6/1.PNG[]  +
 
 From the CDP Portal or CDP Menu choose `Data Warehouse`.
 
-image::images/portalCDW.png[]
+image:images/step6/2.PNG[]  +
 
 From the CDW `Overview` window, click the "HUE" button on the right corner as shown under the `Virtual Warehouses` to the right.
 
-image::images/cdwOverview.png[]
+image:images/step6/3.PNG[]  +
 
 Now you're accessing to the sql editor called "HUE".
 
-image::images/hueOverview.png[]
+image:images/step6/4.PNG[]  +
 
-Let's `Select the Impala engine` that you will be using for interacting with database.
+Let's select the Impala engine that you will be using for interacting with database.
+On the top left corner select `</>` and select the Editor to be `Impala`.
+
 Make sure that you can see `Impala` instead of `Unified Analytics` on top of the area where you would write queries.
+
+image:images/step6/5.PNG[]  +
 
 Create database using your login `For example: wuser00`. Replace `<user>` by your username for database creation in the command below.
 
@@ -327,7 +334,7 @@ CREATE DATABASE <user>_stocks;
 
 See the result to notice a message `Database has been created`.
 
-image::images/cdwCreateDatabase.png[]
+image:images/step6/6.PNG[]  +
 
 After creating the database create an Iceberg table. Replace `<user>` by your username for iceberg table creation in the command below.
 
@@ -352,7 +359,7 @@ STORED AS iceberg;
 
 See the result to notice a message `Table has been created`.
 
-image::images/cdwCreatIcebergTable.png[]
+image:images/step6/7.PNG[]  +
 
 Let's now create our engineering process.
 
