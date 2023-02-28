@@ -445,7 +445,7 @@ You don't have access to it. The instructor has access to the same. The next sec
 Click on the Job Name - `wuser-StockIceberg`.
 image:images/step7/7.PNG[]  +
 
-Click on the Run Id.
+Click on the `Run Id``.
 image:images/step7/8.PNG[]  +
 
 You will reach the `Trends` option.
@@ -454,7 +454,7 @@ image:images/step7/9.PNG[]  +
 Click the `Logs` and go through the various tabs like 'stderr+stdout' to understand better.
 image:images/step7/10.PNG[]  +
 
-Under `Logs` tab check for the following. In most of the cases `Processing tem dirs` indicates that job would run successfully and is in it's last stages.
+Under `Logs` tab check for the following. In most of the cases `Processing temp dirs` indicates that job would run successfully and is in it's last stages.
 image:images/step7/11.PNG[]
 
 
@@ -464,24 +464,31 @@ Before moving ahead with this section make sure that the CDE job ran successfull
 
 image:images/step8/1.PNG[] +
 
-We will now create a simple dashboard using Cloudera Data Viz in the Step 7.
+We will now create a simple dashboard using Cloudera Data Viz.
 
-Go back to CDW window.
+Click on `Home` option on top left corner to go to the landing page.
 
-image::images/cdwPortal.png[]
+image:images/step8/2.PNG[]  +
+
+From the CDP Portal or CDP Menu choose `Data Warehouse`.
+
+image:images/step8/3.PNG[]  +
+
+You will reach the `Overview` page.
+
+image:images/step8/4.PNG[]  +
 
 In the menu on the left choose `Data Visualization`.
-Then click the `Data VIZ` button on the right. 
+Look for `meta-workshop-dataviz`. Then click the `Data VIZ` button on the right. 
 
-image::images/cdwDataVizStep1.png[]
+image:images/step8/5.PNG[]  +
 
 You will access to the following window. Choose `DATA` on the upper menu bar next to the options of HOME, SQL, VISUALS. +
+image:images/step8/6.PNG[]  +
 
-image::images/dataVizNewDataset.png[]
+Click `meta-workshop` option in the left pane and then click on `ADD DATA` option on top.
 
-Click `NEW CONNECTION` button on the left upper corner.
-
-image::images/dataVizNewDatasetStep1.png[]
+image:images/step8/7.PNG[]  +
 
 Replace `(user)` with your username wherever it is applicable. +
 `Dataset title` +
@@ -510,15 +517,16 @@ ____
 
 Click `CREATE`.
 
-image::images/dataVizNewDatasetStep2.png[]
+image:images/step8/8.PNG[]  +
 
-Select "New Dashboard" \-> image:images/newDashBoardIco.png[] icon next to the Table that you created just now.
+Select "New Dashboard" \-> image:images/step8/9.PNG[] icon next to the Table that you created just now.
 
-image::images/dataVizNewDatasetStep3.png[]
+image:images/step8/10.PNG[]
 
-image::images/dataVizNewDatasetStep4.png[]
+You'll land in the following page.
+image:images/step8/11.PNG[]
 
-Let's drag from Data on the "Dashboard Designer" to Visuals.
+Let's drag from `DATA` section on the right under `Dashboard Designer` the following attribute/metric. And the 'REFRESH THE VISUAL'
 
 `Dimensions` \-> `ticker` +
 
@@ -532,11 +540,11 @@ ____
 Move it to Visuals \-> `Measures`
 ____
 
-image::images/dataVizNewDatasetStep5.png[]
+image:images/step8/12.PNG[]
 
 Then on 'VISUALS' choose `Packed Bubbles`. +
 
-image::images/dataVizNewDatasetStep6.png[]
+image:images/step8/13.PNG[]
 Your visual could be slighltly different from the image here.
 
 Make it PUBLIC by changing the option from `PRIVATE` to `PUBLIC`. Save it by clicking the `SAVE` button on the top.  You have succeeded to create a simple dashboard. Now, let's query our data and explore the time-travel and snapshot capabilties of Iceberg.
