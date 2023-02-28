@@ -571,6 +571,32 @@ image::images/iceberg-architecture.png[]
 Our example will load the intraday stock daily since the free API does not give real-time data, but we can change the Cloudera Dataflow Parameter to add one more ticker and we've scheduled to run hourly the CDE process.
 After this we will be able to see the new ticker information in the dashboard and also *perform time travel using Iceberg!*
 
+=== Logging into Hue
+Click on `Home` option on top left corner to go to the landing page.
+
+image:images/step9/1.PNG[]  +
+
+From the CDP Portal or CDP Menu choose `Data Warehouse`.
+
+image:images/step9/2.PNG[]  +
+
+From the CDW `Overview` window, click the "HUE" button on the right corner as shown under the `Virtual Warehouses` to the right.
+
+image:images/step9/3.PNG[]  +
+
+Now you're accessing to the sql editor called "HUE".
+
+image:images/step9/4.PNG[]  +
+
+Let's select the Impala engine that you will be using for interacting with database.
+On the top left corner select `</>` and select the Editor to be `Impala`.
+
+Make sure that you can see `Impala` instead of `Unified Analytics` on top of the area where you would write queries.
+
+image:images/step9/5.PNG[]  +
+
+
+
 === Iceberg snapshots
 
 Let's see the Iceberg table history.
