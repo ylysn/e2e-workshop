@@ -377,7 +377,8 @@ From the CDP Portal or CDP Menu choose `Data Engineering`.
 image:images/step7/2.PNG[]  +
 
 Let's create a job. 
-Click on `Jobs`. Make sure that you can see `meta-workshop-de` on the top.  Then click `Create Job` button in the right side of the screen. 
+Click on `Jobs`. Make sure that you can see `meta-workshop-de` on the top.  +
+Then click `Create Job` button in the right side of the screen. +
 *Note*: This page may differ a little bit depending on the fact that some user may have created a job prior to you or not.
 
 image:images/step7/3.PNG[]  +
