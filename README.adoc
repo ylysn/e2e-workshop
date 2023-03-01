@@ -46,7 +46,7 @@ image:images/step0/architecture.PNG[]  +
 . Wi-Fi Internet connection.
 . Git installed.
 
-== Step 1: Get github project
+== Step 1 (Optional): Get github project
 
 {blank}
 
@@ -259,13 +259,13 @@ Dataflow is up and running and you can confirm the same by looking at the green 
 image:images/step5/16.PNG[]  +
 
 In minutes we will start receiving stock information into our bucket.
-If you want you can check in your bucket under the path `s3a://meta-workshop/user/(username)/stocks/new`.
-*Note*: You don't have access to the S3 bucket. The instructor will confirm if the datafiles have been received after your workflow runs.
+If you want you can check in your bucket under the path `s3a://meta-workshop/user/(username)/stocks/new`. +
+*Note*: You don't have access to the S3 bucket. The instructor will confirm if the data files have been received after your workflow runs.
 
 
 === View Nifi DataFlow
 
-Click on blue arrow on the right of your deployed dataflow (wuser00_stock_dataflow).
+Click on blue arrow on the right of your deployed dataflow `wuser00_stock_dataflow`.
 
 image:images/step5/16.PNG[]  +
 
@@ -295,7 +295,7 @@ On getting the pop up, click on `Suspend Flow`.
 
 image:images/step5/22.PNG[]  +
 
-Confirm that the status is 'Suspended'.
+Confirm that the status is `Suspended`.
 
 image:images/step5/23.PNG[]  +
 
@@ -314,7 +314,7 @@ From the CDW `Overview` window, click the "HUE" button on the right corner as sh
 
 image:images/step6/3.PNG[]  +
 
-Now you're accessing to the sql editor called "HUE".
+Now you're accessing to the sql editor called "HUE" (Hadoop User Experience).
 
 image:images/step6/4.PNG[]  +
 
@@ -384,7 +384,7 @@ Then click `Create Job` button in the right side of the screen. +
 
 image:images/step7/3.PNG[]  +
 
-`Fill the following values carefully.`
+*`Fill the following values carefully`*.
 
 `Job Type*`
 
@@ -436,7 +436,7 @@ This application will:
 * MERGE INTO the final table, INSERT new data or UPDATE if exists;
 * Archive files in the bucket;
 
-After execution, the processed files will be in your bucket but under the "processed"+date directory. 
+After execution, the processed files will be in your bucket but under the name which has the format - `processed"+date/`. 
 
 image:images/step7/6.PNG[]  +
 
@@ -446,7 +446,7 @@ You don't have access to it. The instructor has access to the same. The next sec
 Click on the Job Name - `wuser-StockIceberg`.
 image:images/step7/7.PNG[]  +
 
-Click on the `Run Id``.
+Click on the `Run Id`.
 image:images/step7/8.PNG[]  +
 
 You will reach the `Trends` option.
@@ -461,7 +461,7 @@ image:images/step7/11.PNG[]
 
 == Step 8: Create Dashboard using CDP DataViz
 
-Before moving ahead with this section make sure that the CDE job ran successfully. Go to `Job Runs` option in the left pane and look for the job that you ran now. It should have a green tick box next to it's name.
+*Note*: Before moving ahead with this section make sure that the *CDE job ran successfully*. Go to `Job Runs` option in the left pane and look for the job that you ran now. It should have a green tick box next to it's name.
 
 image:images/step8/1.PNG[] +
 
@@ -552,7 +552,7 @@ Make it PUBLIC by changing the option from `PRIVATE` to `PUBLIC`. Save it by cli
 
 == Step 9: Query Iceberg Tables in Hue and Cloudera Data Visualization
 
-=== Step 9(a): For Reading only: Iceberg Architecture
+=== Step 9(a): For Reading only (Optional): Iceberg Architecture
 
 Apache Iceberg is an open table format, originally designed at Netflix to overcome the challenges faced when using already existing data lake formats like Apache Hive.
 
@@ -659,7 +659,7 @@ image:images/step9/15.PNG[]  +
 The S3 bucket gets updated with new data and this time it includes the new ticker 'NVDA' as well. We will see it. You can see the same in S3 bucket as shown here.
 image:images/step9/16.PNG[]  +
 
-Now go to Cloudera Data Engineering and `Jobs`. Choose the CDE Job that you had created earlier with your username.
+Now go to Cloudera `Data Engineering` from the home page and `Jobs`. Choose the CDE Job that you had created earlier with your username.
 image:images/step9/17.PNG[]  +
 
 {blank} +
@@ -673,7 +673,7 @@ image:images/step9/21.PNG[]  +
 
 {blank} +
 
-As CDF has ingested a new stock value and then CDE has merged those value it has created new Iceberg snapshots. Copy and paste the new snapshot_id and use it on the following impala query.
+As CDF has ingested a new stock value and then CDE has merged those value it has created new Iceberg snapshots. Copy and paste the new 'snapshot_id' and use it on the following impala query.
 
 === Step 9(e): Check new snapshot history
 
