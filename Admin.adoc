@@ -13,8 +13,8 @@ This document gives inputs on what is needed from the environment set up perspec
 image:images/admin/cdp.PNG[]  +
 image:images/admin/aws.PNG[]  +
 
-You can set up the environment by following the guide here. +
-https://docs.cloudera.com/cdp-public-cloud/cloud/aws-quickstart/topics/mc-aws-quickstart.html#mc-aws-quickstart[Setting Up CDP Environment using AWS] url. +
+You can set up the environment by following the guide here - 
+https://docs.cloudera.com/cdp-public-cloud/cloud/aws-quickstart/topics/mc-aws-quickstart.html#mc-aws-quickstart[Setting Up CDP Environment using AWS] +
 
 . CDW (Impala) - This is needed to run queries to test the iceberg features. 
 image:images/admin/cdw-1.PNG[]  +
