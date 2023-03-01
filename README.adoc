@@ -41,14 +41,14 @@ image:images/step0/architecture.PNG[]  +
 
 == High-Level Steps
 
-Below are the high-level steps for what we will be doing in the workshop.
-. Get Alpha Vantage key to be used in Cloudera Data Flow (CDF) to collect stock data (IBM, AMZN, MSFT, GOOGL).
-. Create CDF workflow and run it to ingest data into S3.
-. Create Iceberg Table using Cloudera Data Warehouse (CDW/Hue).
-. Create CDE job and run it to ingest data into iceberg table.
-. Use Cloudera Data Viz to create a simple dashboard on Iceberg table.
-. Run the CDE job with updated ticker (NVDA).
-. Use/Test Iceberg time travel features.
+Below are the high-level steps for what we will be doing in the workshop. +
+. Get Alpha Vantage key to be used in Cloudera Data Flow (CDF) to collect stock data (IBM, AMZN, MSFT, GOOGL). +
+. Create CDF workflow and run it to ingest data into S3. +
+. Create Iceberg Table using Cloudera Data Warehouse (CDW/Hue). +
+. Create CDE job and run it to ingest data into iceberg table. +
+. Use Cloudera Data Viz to create a simple dashboard on Iceberg table. +
+. Run the CDE job with updated ticker (NVDA). +
+. Use/Test Iceberg time travel features. +
 
 
 == Pre-requisites
