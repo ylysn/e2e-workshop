@@ -34,20 +34,24 @@ image:images/admin/securitygrp.PNG[]  +
 
 The purpose of this section is to capture the inputs that as an admin that you must be aware of while setting up the workshop and running the same.
 
-=== 1. CDF Flow failing
-*Issue*: The CDF Nifi flow fails at the last step. 
+=== 1. IDBroker Mapping
+*Step*: Make sure that the ID broker mapping is done appropriately as shown below. +
+image:images/admin/Idbroker.PNG[]  +
+
+=== 2. CDF Flow failing
+*Issue*: The CDF Nifi flow fails at the last step. +
 *Solution*: There is a permission that needs to be added in AWS whose screenshot is added below. The additional permission is shown in the screenshot - `meta-workshop-stock-custom`. +
 image:images/admin/aws-custom.PNG[]  +
 image:images/admin/jsonperm.PNG[]  +
 The .json file is uploaded in the admin folder. 
 
-=== 2. CDE job failing 
-*Issue*: The CDE job was failing.
-*Solution*: The permission issue was causing this issue and hence needed to add the ranger policies.
+=== 3. CDE job failing 
+*Issue*: The CDE job was failing. +
+*Solution*: The permission issue was causing this issue and hence needed to add the ranger policies. +
 image:images/admin/ranger-cde.PNG[]  +
 
 
-=== 3. Impala table is not visible (Hue/Data Viz)
-*Issue*: The Impala tables are not visible in Hue and in Data Viz when the user logs in with their usernames like `wuser00`
+=== 4. Impala table is not visible (Hue/Data Viz)
+*Issue*: The Impala tables are not visible in Hue and in Data Viz when the user logs in with their usernames like `wuser00`. +
 *Solution*: Ranger permission needs to be appropriately set for `workshop-users` which is a group for users participating in the workshop. These users are part of the `workshop-users`. +
 image:images/admin/ranger-impala.PNG[]  +
