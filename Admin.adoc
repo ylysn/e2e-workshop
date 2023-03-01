@@ -1,4 +1,4 @@
-= Partner Summit 2023 - Workshop Admin Guide
+= Workshop Admin Guide
 
 '''
 
@@ -8,10 +8,13 @@ Version : 1.0.0 `1st March 2023` +
 == Introduction
 
 This document gives inputs on what is needed from the environment set up perspective to run this workshop.
-. CDP environment (Running on AWS) - Depending on the number of users one might want to set it up in HA or Non-HA mode. This workshop has been tested on `meta-workshop` as part of `CDP Partner Workshop` okta tile. The underlying environment is making use of `aws-se-pse-daily`.
+. CDP environment (Running on AWS) - Depending on the number of users one might want to set it up in HA or Non-HA mode. This workshop has been tested on `meta-workshop` as part of `CDP Partner Workshop` okta tile. The underlying environment is making use of `aws-se-pse-daily`. 
 
 image:images/admin/cdp.PNG[]  +
 image:images/admin/aws.PNG[]  +
+
+You can set up the environment by following the guide here. +
+https://docs.cloudera.com/cdp-public-cloud/cloud/aws-quickstart/topics/mc-aws-quickstart.html#mc-aws-quickstart[Setting Up CDP Environment using AWS] url. +
 
 . CDW (Impala) - This is needed to run queries to test the iceberg features. 
 image:images/admin/cdw-1.PNG[]  +
