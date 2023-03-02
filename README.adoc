@@ -59,6 +59,7 @@ Below are the high-level steps for what we will be doing in the workshop. +
 . Git installed.
 
 Please complete only one of the two following steps: `Step 1a` or `Step 1b`. Follow `Step 1a` if you have Git installed on your machine, else, follow `Step 1b`. +
+
 == Step 1a. (Optional): Get github project
 
 {blank}
