@@ -22,20 +22,16 @@ This workshop introduces CDP, with a focus on the data management capabilities t
 In this exercise, we will work get stock data from https://www.alphavantage.co/[Alpha Vantage], that offers free stock APIs in JSON and CSV formats for real-time and historical stock market data.
 
 * Data ingestion and streaming -- provided by *_Cloudera Data Flow (CDF)_* and *_Cloudera Data Engineering (CDE)_*.
-* Global data access, data processing and persistence--provided by *_Cloudera Data Hub (CDH)_*.
+* Global data access and persistence--provided by *_Cloudera Data Warehouse (CDHW_*.
 * Data visualization with *_CDP Data Visualization_*.
 
-*_Cloudera DataFlow (CDF)_* is a scalable, real-time streaming analytics platform that ingests, curates, and analyzes data for key insights and immediate actionable intelligence.
-CDF's Flow Management is powered by Apache NiFi, a no-code data ingestion and management solution.
-Apache NiFi is a very mature open-source solution meant for large scale, high velocity enterprise data ingestion use cases.
+*_Cloudera DataFlow (CDF)_* offers a flow-based low-code development paradigm that aligns best with how developers design, develop, and test data distribution pipelines. With over 450+ connectors and processors across the ecosystem of hybrid cloud services—including data lakes, lakehouses, cloud warehouses, and on-premises sources—CDF-PC provides indiscriminate data distribution. These data distribution flows can then be version-controlled into a catalog where operators can self-serve deployments to different runtimes.
 
-*_Cloudera Data Engineering (CDE)_* is a serverless service for Cloudera Data Platform that allows you to submit batch jobs to auto-scaling virtual clusters.
-CDE enables you to spend more time on your applications, and less time on infrastructure.
-CDE allows you to create, manage, and schedule Apache Spark jobs without the overhead of creating and maintaining Spark clusters.
-With Cloudera Data Engineering, you define virtual clusters with a range of CPU and memory resources, and the cluster scales up and down as needed to run your Spark workloads, helping to control your cloud costs.
+*_Cloudera Data Engineering (CDE)_* is the only cloud-native service purpose-built for enterprise data engineering teams. Building on Apache Spark, Data Engineering is an all-inclusive data engineering toolset that enables orchestration automation with Apache Airflow, advanced pipeline monitoring, visual troubleshooting, and comprehensive management tools to streamline ETL processes across enterprise analytics teams.
 
-*_CDP Data Visualization_* enables data engineers, business analysts, and data scientists explore data quickly and easily, collaborate, and share insights across the data lifecycle--from data ingest to data insights and beyond.
-Delivered natively as part of Cloudera Data Platform (CDP), Data Visualization delivers a consistent and easy to use data visualization experience with intuitive and accessible drag-and-drop dashboards and custom application creation.
+*_Cloudera Data Warehouse (CDW)_* is a cloud service for creating self-service data warehouses and the underlying compute clusters for teams of business analysts. Data Warehouse is an auto-scaling, highly concurrent and cost effective analytics service that ingests high scale data anywhere, from structured, unstructured and edge sources. It supports hybrid and multi-cloud infrastructure models by seamlessly moving workloads between on-premise and any cloud for reports, dashboards, ad-hoc and advanced analytics, including AI, with consistent security and governance.
+
+*_CDP Data Visualization_* enables data engineers, business analysts, and data scientists explore data quickly and easily, collaborate, and share insights across the data lifecycle--from data ingest to data insights and beyond. Delivered natively as part of Cloudera Data Platform (CDP), Data Visualization delivers a consistent and easy to use data visualization experience with intuitive and accessible drag-and-drop dashboards and custom application creation.
 
 image:images/step0/architecture.PNG[]  +
 
@@ -175,7 +171,8 @@ ____
 
 `Nifi Flow Configuration`
 ____
-Upload the file *Stocks_Intraday_Alpha_Template.json* (*`Note`*: You had downloaded this file in `Step 1(a)` or `Step 1(b)` depending on what you chose initiatlly.).
+Upload the file *Stocks_Intraday_Alpha_Template.json* +
+(*`Note`*: You had downloaded this file in `Step 1(a)` or `Step 1(b)` depending on what you chose initiatlly.).
 ____
 
 Click `Import` +
