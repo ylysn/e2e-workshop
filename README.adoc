@@ -78,7 +78,7 @@ image:images/step2/alphaVantagePortal.PNG[]
 
 . Choose 'Student' for the question - `Which of the following best describes you?`.
 . Enter your own organisation name for the question - `Organization (e.g. company, university, etc.):`
-. Enter your email address for the question - `Email:`
+. Enter your email address for the question - `Email:` (Note: Please enter personal email id and not the workshop email id)
 . Click on `GET FREE API KEY`.
 
 image:images/step2/claimApiKey.PNG[]
@@ -92,7 +92,7 @@ image:images/step2/getKey.PNG[] +
 == Step 3: Access CDP Public Cloud Portal
 
 Please use the login url: http://3.109.161.118/auth/realms/workshop/protocol/saml/clients/samlclient[Workshop login]
-Enter the `Username` and `Password` shared by your instructor.
+Enter the `Username` and `Password` shared by your instructor. (Note that your username would be something like `wuser00@workshop.com`).
 
 image::images/step3/1.PNG[]
 
