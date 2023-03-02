@@ -60,7 +60,7 @@ Below are the high-level steps for what we will be doing in the workshop. +
 
 Please complete only one of the two following steps: `Step 1a` or `Step 1b`. Follow `Step 1a` if you have Git installed on your machine, else, follow `Step 1b`. +
 
-== Step 1a. (Optional): Get github project
+== Step 1a. : Get github project
 
 {blank}
 
@@ -71,7 +71,7 @@ You can use the workshop project cloning this github repository : https://github
 git clone https://github.com/DashDipti/partner-summit-2023
 ----
 
-== Step 1b. (Optional): Download repository using GUI
+== Step 1b. : Download repository using GUI
 
 {blank}
 Click on `Go to file` and then choose the option `Download ZIP`. +
