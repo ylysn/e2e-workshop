@@ -673,7 +673,6 @@ image:images/step9/16.PNG[]  +
 Now go to Cloudera `Data Engineering` from the home page and `Jobs`. Choose the CDE Job that you had created earlier with your username.
 image:images/step9/17.PNG[]  +
 
-{blank} +
 
 Click the 3 dots next to your job that you had created earloer and then click on `Run Now`.
 image:images/step9/18.PNG[]  +
