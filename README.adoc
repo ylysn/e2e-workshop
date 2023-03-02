@@ -58,7 +58,8 @@ Below are the high-level steps for what we will be doing in the workshop. +
 . Wi-Fi Internet connection.
 . Git installed.
 
-== Step 1 (Optional): Get github project
+Please complete only one of the two following steps: `Step 1a` or `Step 1b`. Follow `Step 1a` if you have Git installed on your machine, else, follow `Step 1b`.
+== Step 1a. (Optional): Get github project
 
 {blank}
 
@@ -68,6 +69,19 @@ You can use the workshop project cloning this github repository : https://github
 ----
 git clone https://github.com/DashDipti/partner-summit-2023
 ----
+
+== Step 1b. (Optional): Download repository using GUI
+
+{blank}
+Click on `Go to file` and then choose the option `Download ZIP`. +
+image:images/step1/1.PNG[] +
+
+Use any unzip utility to download extract the content of the `partner-summit-2023-main.zip` file. +
+image:images/step1/1.PNG[] +
+
+In the extracted content just be sure that the downloaded files has a file 'Stocks_Intraday_Alpha_Template.json' which should be around ~64 KB in size. You will need this file in later step. +
+image:images/step1/1.PNG[] +
+
 
 == Step 2: Get Alpha Vantage Key
 
@@ -160,7 +174,7 @@ ____
 
 `Nifi Flow Configuration`
 ____
-Upload the file "*https://github.com/DashDipti/partner-summit-2023/blob/main/Stocks_Intraday_Alpha_Template.json[Stocks_Intraday_Alpha_Template.json]*"
+Upload the file *Stocks_Intraday_Alpha_Template.json* (*`Note`*: You had downloaded this file in `Step 1a` or `Step 1b` depending on what you chose initiatlly.).
 ____
 
 Click `Import` +
