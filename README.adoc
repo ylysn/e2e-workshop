@@ -277,7 +277,7 @@ image:images/step5/14.PNG[]  +
 
 image:images/step5/15.PNG[]  +
 
-Dataflow is up and running and you can confirm the same by looking at the green tick and message `Good Health` against the dataflow name.
+Dataflow is up and running and you can confirm the same by looking at the green tick and message `Good Health` against the dataflow name. It's okay to wait for 2-3 minutes here before you see the green tick.
 
 image:images/step5/16.PNG[]  +
 
@@ -449,7 +449,8 @@ ____
 
 image:images/step7/5.PNG[]  +
 
-Click the `Create and Run` button at the bottom. (There is no screenshot for the same).
+Click the `Create and Run` button at the bottom. (There is no screenshot for the same). +
+*Note*: It might take ~3 minutes. So, it's okay to wait until it's done.
 
 
 This application will:
