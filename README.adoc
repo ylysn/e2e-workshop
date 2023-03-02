@@ -96,7 +96,6 @@ Enter the `Username` and `Password` shared by your instructor. (*Note*: Note tha
 
 image::images/step3/1.PNG[]
 
-
 You should be able to get the following home page of CDP Public Cloud.
 
 image::images/step3/2.PNG[]
@@ -430,7 +429,7 @@ Make sure the below arguments are filled so that (user) is replaced with the act
 
 ____
 (user)_stocks +
-s3a://meta-workshop/
+s3a://meta-workshop/ +
 stocks +
 (user) +
 ____
@@ -487,7 +486,7 @@ From the CDP Portal or CDP Menu choose `Data Warehouse`.
 
 image:images/step8/3.PNG[]  +
 
-You will reach the `Overview` page.
+You will reach the `Overview` page. 
 
 image:images/step8/4.PNG[]  +
 
@@ -593,7 +592,7 @@ From the CDP Portal or CDP Menu choose `Data Warehouse`.
 
 image:images/step9/2.PNG[]  +
 
-From the CDW `Overview` window, click the "HUE" button on the right corner as shown under the `Virtual Warehouses` to the right.
+From the CDW `Overview` window, click the "HUE" button on the right corner as shown under the `Virtual Warehouses` to the right. Make sure that the correct 'Virtual Warehouse' is selected - In this case it is `meta-workshop-ww`.
 
 image:images/step9/3.PNG[]  +
 
