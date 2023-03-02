@@ -498,7 +498,7 @@ image:images/step8/5.PNG[]  +
 You will access to the following window. Choose `DATA` on the upper menu bar next to the options of HOME, SQL, VISUALS. +
 image:images/step8/6.PNG[]  +
 
-Click `meta-workshop` option in the left pane and then click on `ADD DATA` option on top.
+Click `meta-workshop` option in the left pane and then click on `NEW DATASET` option on top.
 
 image:images/step8/7.PNG[]  +
 
