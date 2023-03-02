@@ -675,6 +675,7 @@ image:images/step9/17.PNG[]  +
 
 {blank} +
 
+Click the 3 dots next to your job that you had created earloer and then click on `Run Now`.
 image:images/step9/18.PNG[]  +
 image:images/step9/19.PNG[]  +
 
