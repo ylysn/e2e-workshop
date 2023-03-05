@@ -22,7 +22,7 @@ This workshop introduces CDP, with a focus on the data management capabilities t
 In this exercise, we will work get stock data from https://www.alphavantage.co/[Alpha Vantage], that offers free stock APIs in JSON and CSV formats for real-time and historical stock market data.
 
 * Data ingestion and streaming -- provided by *_Cloudera Data Flow (CDF)_* and *_Cloudera Data Engineering (CDE)_*.
-* Global data access and persistence--provided by *_Cloudera Data Warehouse (CDHW_*.
+* Global data access and persistence--provided by *_Cloudera Data Warehouse (CDW)*.
 * Data visualization with *_CDP Data Visualization_*.
 
 *_Cloudera DataFlow (CDF)_* offers a flow-based low-code development paradigm that aligns best with how developers design, develop, and test data distribution pipelines. With over 450+ connectors and processors across the ecosystem of hybrid cloud services—including data lakes, lakehouses, cloud warehouses, and on-premises sources—CDF-PC provides indiscriminate data distribution. These data distribution flows can then be version-controlled into a catalog where operators can self-serve deployments to different runtimes.
