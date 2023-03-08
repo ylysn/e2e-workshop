@@ -70,7 +70,7 @@ git clone https://github.com/DashDipti/partner-summit-2023
 == Step 1(b): Download repository using GUI
 
 {blank}
-Scroll up the page here (https://github.com/DashDipti/partner-summit-2023) and click on `Code` and then choose the option `Download ZIP`. +
+Scroll up the page here (https://github.com/DashDipti/partner-summit-2023) and click on `<> Code` and then choose the option `Download ZIP`. +
 image:images/step1/1.PNG[] +
 
 Use any unzip utility to download extract the content of the `partner-summit-2023-main.zip` file. +
