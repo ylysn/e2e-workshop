@@ -6,7 +6,7 @@ Version : 2.0.0 `1st March 2023` +
 
 '''
 
-image:images/step0/bannersa.PNG[]  +
+image:images/step0/banner-impact24.PNG[]  +
 
 This document guides students through the Hands-on lab for Partner Summit 2023.
 It will take you step by step to completing the pre-requisites and deliver this demo.
