@@ -11,6 +11,10 @@ image:images/step0/banner-impact24.PNG[]  +
 This document guides students through the Hands-on lab for Partner Summit 2023.
 It will take you step by step to completing the pre-requisites and deliver this demo.
 
+== Recording
+
+The entire lab is recorded and you can watch the same to have a better understanding of the lab. https://www.youtube.com/watch?v=GcNeCGFdmDw[End-to-End Workshop (Recording)]. +
+
 == Introduction
 
 The purpose of this repository is to enable the easy and quick setup of the Partner Summit workshop.
