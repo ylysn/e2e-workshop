@@ -13,7 +13,8 @@ It will take you step by step to completing the pre-requisites and deliver this 
 
 == Recording
 
-The entire lab is recorded and you can watch the same to have a better understanding of the lab. https://www.youtube.com/watch?v=GcNeCGFdmDw[End-to-End Workshop (Recording)]. +
+The entire lab is recorded and you can watch the same to have a better understanding of the lab. +
+https://www.youtube.com/watch?v=GcNeCGFdmDw[End-to-End Workshop (Recording)]. +
 
 == Introduction
 
