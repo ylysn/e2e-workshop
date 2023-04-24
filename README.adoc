@@ -171,8 +171,10 @@ Fill up those parameters : +
 `Flow Name` +
 
 ____
-(user)_stock_data +
+(user)-stock-data +
 ____
+
+Depending upon your user name it should be something like - `wuser00-stock-data`. +
 
 `Nifi Flow Configuration`
 ____
@@ -195,7 +197,7 @@ Now let's deploy it.
 Click on the small arrow towards right of the catalog you just created. Click on `Deploy` button.
 
 image:images/step5/6.PNG[]  +
-You will need to select the workshop environment *`meta-workshop`*.[Attention]
+You will need to select the workshop environment *`meta-workshop`*. +
 Click on `Continue ->`
 
 image:images/step5/7.PNG[]  +
