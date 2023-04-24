@@ -1,4 +1,4 @@
-= Cloudera Impact 24 Workshop
+= Cloudera Technical Workshop
 
 '''
 
