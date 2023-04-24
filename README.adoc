@@ -201,12 +201,14 @@ You will need to select the workshop environment *`meta-workshop`*. +
 Click on `Continue ->`
 
 image:images/step5/7.PNG[]  +
-Give a name to this dataflow +
+Give a name to this dataflow. +
 `Deployment Name`
 
 ____
 (user)_stock_dataflow +
 ____
+Depending on your user name it should be something like - `wuser00_stock_dataflow`. +
+
 Make sure that the right `Target Environment` is selected.
 Click `Next`.
 
@@ -228,6 +230,7 @@ ____
 ____
 your user +
 ____
+Depending on your user name it should be something like - `wuser00`. +
 
 `S3 Path` +
 
@@ -270,7 +273,7 @@ Click `Next->`.
 image:images/step5/11.PNG[]  +
 
 You can define KPI's in regards what has been specified in your dataflow, but we will skip this for now.
-Click `Next->`+
+Click `Next->` +
 
 image:images/step5/12.PNG[]  +
 
@@ -424,7 +427,8 @@ ____
 Choose Spark 3.2.0
 ____
 
-`Name*`. Replace `(user)` with your username. For example: `wuser00-StockIceberg`.
+`Name*` +
+Replace `(user)` with your username. For example: `wuser00-StockIceberg`. +
 
 ____
 (user)-StockIceberg
