@@ -62,6 +62,7 @@ Below are the high-level steps for what we will be doing in the workshop. +
 Please complete only one of the two following steps: `Step 1(a)` or `Step 1(b)`. Follow `Step 1(a)` if you have Git installed on your machine, else, follow `Step 1(b)`. +
 
 == Step 0: Access Details
+
 - Your instructor will guide you through this. +
 (1). https://docs.google.com/spreadsheets/d/1s63G-iBtgS8tDZOD1ml8Gh0YdunL4MtNqNzyN7E7gaY/edit#gid=412559706[Credentials]: Particpants must enter their `First Name`, `Last Name` & `Company` details and use corresponding `Workshop Login Username`, `Workshop Login Password` and `CDP Workload User`. +
 (2). Using the details in the previous step make sure you are able to login to http://3.109.161.118/auth/realms/workshop/protocol/saml/clients/samlclient[Workshop login]. +
