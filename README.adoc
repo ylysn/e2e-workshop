@@ -56,7 +56,7 @@ Below are the high-level steps for what we will be doing in the workshop. +
 
 . Laptop with a supported OS (Windows 7 not supported) or MacBook.
 . A modern browser - Google Chrome (IE, Firefox, Safari not supported).
-. Wi-Fi Internet connection.
+. Wi-Fi Internet connection. 
 . Git installed.
 
 Please complete only one of the two following steps: `Step 1(a)` or `Step 1(b)`. Follow `Step 1(a)` if you have Git installed on your machine, else, follow `Step 1(b)`. +
