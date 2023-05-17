@@ -8,9 +8,6 @@ Version : 3.0.0 `1st April 2023` +
 
 image:images/step0/HOL.PNG[]  +
 
-This document guides participants  through the Hands-on lab for the Partner Day 2023.
-It will take you step by step to completing the pre-requisites and deliver this demo.
-
 == Recording
 
 The entire lab is recorded and you can watch the same to have a better understanding of the lab. +
