@@ -68,7 +68,7 @@ Your instructor will guide you through this. +
 
 {blank}
 
-You can use the workshop project cloning this github repository : https://github.com/DashDipti/e2e-cdp-alphavantage[Workshop Github repo]
+You can use the workshop project cloning this github repository : https://github.com/DashDipti/e2e-cdp-alphavantage[e2e-cdp-alphavantage repository]
 
 [,console]
 ----
