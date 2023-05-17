@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=GcNeCGFdmDw[End-to-End Workshop (Recording)]. +
 
 == Introduction
 
-The purpose of this repository is to enable the easy and quick setup of the Partner Summit workshop.
+The purpose of this repository is to enable the easy and quick setup of the workshop.
 Cloudera Data Platform (CDP) has been built from the ground up to support hybrid, multi-cloud data management in support of a Data Fabric architecture.
 This workshop introduces CDP, with a focus on the data management capabilities that enable the Data Fabric and Data Lakehouse.
 
@@ -68,20 +68,20 @@ Your instructor will guide you through this. +
 
 {blank}
 
-You can use the workshop project cloning this github repository : https://github.com/DashDipti/partner-summit-2023 [Workshop Github repo]
+You can use the workshop project cloning this github repository : https://github.com/DashDipti/e2e-cdp-alphavantage [Workshop Github repo]
 
 [,console]
 ----
-git clone https://github.com/DashDipti/partner-summit-2023
+git clone https://github.com/DashDipti/e2e-cdp-alphavantage
 ----
 
 == Step 1(b): Download repository using GUI
 
 {blank}
-Scroll up the page here (https://github.com/DashDipti/partner-summit-2023) and click on `<> Code` and then choose the option `Download ZIP`. +
+Scroll up the page here (https://github.com/DashDipti/e2e-cdp-alphavantage) and click on `<> Code` and then choose the option `Download ZIP`. +
 image:images/step1/1.PNG[] +
 
-Use any unzip utility to download extract the content of the `partner-summit-2023-main.zip` file. +
+Use any unzip utility to download extract the content of the `e2e-cdp-alphavantage.zip` file. +
 image:images/step1/1.PNG[] +
 
 In the extracted content just be sure that the downloaded files has a file *`Stocks_Intraday_Alpha_Template.json`* which should be around *~65* KB in size. You will need this file in later step. +
