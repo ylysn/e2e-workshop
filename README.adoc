@@ -68,7 +68,7 @@ Your instructor will guide you through this. +
 
 {blank}
 
-You can use the workshop project cloning this github repository : https://github.com/DashDipti/e2e-cdp-alphavantage [Workshop Github repo]
+You can use the workshop project cloning this github repository : https://github.com/DashDipti/e2e-cdp-alphavantage[Workshop Github repo]
 
 [,console]
 ----
@@ -78,7 +78,7 @@ git clone https://github.com/DashDipti/e2e-cdp-alphavantage
 == Step 1(b): Download repository using GUI
 
 {blank}
-Scroll up the page here (https://github.com/DashDipti/e2e-cdp-alphavantage) and click on `<> Code` and then choose the option `Download ZIP`. +
+Scroll up the page https://github.com/DashDipti/e2e-cdp-alphavantage[here] and click on `<> Code` and then choose the option `Download ZIP`. +
 image:images/step1/1.PNG[] +
 
 Use any unzip utility to download extract the content of the `e2e-cdp-alphavantage.zip` file. +
