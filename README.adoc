@@ -430,7 +430,7 @@ image:images/step7/3.PNG[]  +
 `Job Type*`
 
 ____
-Choose Spark 3.2.0
+Choose Spark 3.2.3
 ____
 
 `Name*` +
