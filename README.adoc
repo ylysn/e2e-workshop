@@ -291,15 +291,16 @@ image:images/step5/14.PNG[]  +
 
 image:images/step5/15.PNG[]  +
 
-Dataflow is up and running and you can confirm the same by looking at the green tick and message `Good Health` against the dataflow name. It's okay to wait for 2-3 minutes here before you see the green tick. Notice the `Event History` and there are approximately 8 steps that happen after the flow deployment. You might want to observe those.
+Dataflow is up and running and you can confirm the same by looking at the green tick and message `Good Health` against the dataflow name. It's will take ~7 minutes before you see the green tick. Notice the `Event History` and there are approximately 8 steps that happen after the flow deployment. You might want to observe those.
 
 image:images/step5/15-1.PNG[]  +
 image:images/step5/16.PNG[]  +
 
-In minutes we will start receiving stock information into our bucket.
+After the successful deployment we will start receiving stock information into our bucket.
 If you want you can check in your bucket under the path `s3a://meta-workshop/user/(username)/stocks/new`. +
 *Note*: You don't have access to the S3 bucket. The instructor will confirm if the data files have been received after your workflow runs. +
-*Let the instructor know if you have reached this section.*
+
+Proceed to the next section to make sure if the flow ran successfully without any errors. 
 
 
 === View Nifi DataFlow
@@ -319,8 +320,9 @@ image:images/step5/18.PNG[]  +
 image:images/step5/19.PNG[]  +
 
 
-You can see the Nifi data flow that has been deployed from the json file.
-Let's take a quick look together.
+You can see the Nifi data flow that has been deployed from the json file. You can click each of the processor groups to go inside and see the flow details. Make sure that there are no errors in the flow. 
+If you see any please *let the instructor know.*
+
 
 image:images/step5/20.PNG[]  +
 
