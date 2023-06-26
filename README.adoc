@@ -321,7 +321,7 @@ image:images/step5/19.PNG[]  +
 
 
 You can see the Nifi data flow that has been deployed from the json file. You can click each of the processor groups to go inside and see the flow details. Make sure that there are no errors in the flow. 
-If you see any please *let the instructor know.*
+If you see any please `*let the instructor know*`.
 
 
 image:images/step5/20.PNG[]  +
@@ -355,7 +355,7 @@ From the CDW `Overview` window, click the "HUE" button on the right corner as sh
 
 image:images/step6/3.PNG[]  +
 
-Now you're accessing to the sql editor called "HUE" (Hadoop User Experience).
+Now you're accessing to the sql editor called - `"HUE" (Hadoop User Experience)`.
 
 image:images/step6/4.PNG[]  +
 
