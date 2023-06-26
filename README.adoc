@@ -122,7 +122,7 @@ image::images/step3/2.PNG[]
 
 == Step 4: Define Workload Password
 
-You will need to define your workload password that will be used to acess non-SSO interfaces. You may read more about it here (https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-access-paths-to-cdp.html).
+You will need to define your workload password that will be used to acess non-SSO interfaces. You may read more about it: https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-access-paths-to-cdp.html[Non-SSO interfaces].
 Please keep it with you. If you have forgotten it, you will be able to repeat this process and define another one.
 
 . Click on your `user name (Ex: wuser00@workshop.com`) at the lower left corner.
