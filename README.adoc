@@ -2,7 +2,7 @@
 
 '''
 
-Version : 3.0.0 `1st April 2023` +
+Version : 3.1.0 `26th June 2023` +
 
 '''
 
